@@ -1,9 +1,5 @@
 if [ ! -d /dev/shm/firefox ]; then
 	mkdir /dev/shm/firefox
-	pwd
-	cd ~/.mozilla/firefox/*.default
-	pwd
-	cp -a * /dev/shm/firefox
-	cd -
+	cp -a ~/.mozilla/firefox/*.default/* /dev/shm/firefox
 fi
 firefox -P shm
