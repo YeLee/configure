@@ -1,0 +1,26 @@
+#! /bin/bash
+nic=$1
+netdev=/proc/net/dev
+if [ $# != 1 ] ; then 
+	echo "Usage : $0 NIC"
+	exit 1
+fi
+if [ -z "$(grep $nic: $netdev)" ];then
+	echo "Invalid NIC"
+	exit 1
+fi
+in_orig=$(grep $nic $netdev|sed "s/$nic://"|awk '{ print $1 }')
+out_orig=$(grep $nic $netdev|sed "s/$nic://"|awk '{ print $9 }')
+while true
+do
+	sleep 1
+	in=$(grep $nic $netdev|sed "s/$nic://"|awk '{ print $1 }')
+	out=$(grep $nic $netdev|sed "s/$nic://"|awk '{ print $9 }')
+	in_diff=$(awk 'BEGIN{printf "%5.2f", '"$[in-in_orig]"'/1024}')
+	out_diff=$(awk 'BEGIN{printf "%5.2f", '"$[out-out_orig]"'/1024}')
+	in_total=$(awk 'BEGIN{printf "%6.2f", '"$in"'/1024/1024}')
+	out_total=$(awk 'BEGIN{printf "%6.2f", '"$out"'/1024/1024}')
+	echo "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"
+	in_orig=${in}
+	out_orig=${out}
+done
