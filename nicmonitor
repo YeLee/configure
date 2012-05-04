@@ -1,7 +1,7 @@
-#! /bin/bash
+#!/bin/bash
 nic=$1
 netdev=/proc/net/dev
-if [ $# != 1 ] ; then 
+if [ $# != 1 ];then 
 	echo "Usage : $0 NIC"
 	exit 1
 fi
@@ -20,7 +20,11 @@ do
 	out_diff=$(awk 'BEGIN{printf "%5.2f", '"$[out-out_orig]"'/1024}')
 	in_total=$(awk 'BEGIN{printf "%6.2f", '"$in"'/1024/1024}')
 	out_total=$(awk 'BEGIN{printf "%6.2f", '"$out"'/1024/1024}')
-	echo "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"
+#	echo "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"
+	tput sc
+#	echo -n "$nic:IN ";tput setf 4;echo -n ${in_diff}K;tput sgr0;echo -n " OUT ";tput setf 4;echo -n ${out_diff}K;tput sgr0;echo -n " TOTALIN ";tput setf 4;echo -n ${in_total}M;tput sgr0;echo -n " TOTALOUT ";tput setf 4;echo -n ${out_total}M;tput sgr0
+	echo -n "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"	
+	tput rc
 	in_orig=${in}
 	out_orig=${out}
 done
