@@ -20,11 +20,21 @@ do
 	out_diff=$(awk 'BEGIN{printf "%5.2f", '"$[out-out_orig]"'/1024}')
 	in_total=$(awk 'BEGIN{printf "%6.2f", '"$in"'/1024/1024}')
 	out_total=$(awk 'BEGIN{printf "%6.2f", '"$out"'/1024/1024}')
+
+#	默认是没开输出支持的，想要添加不同的输出模式支持，可能需要取消对应代码块前的注释。
+
+#	part1无高亮刷屏
 #	echo "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"
-	tput sc
-#	echo -n "$nic:IN ";tput setf 4;echo -n ${in_diff}K;tput sgr0;echo -n " OUT ";tput setf 4;echo -n ${out_diff}K;tput sgr0;echo -n " TOTALIN ";tput setf 4;echo -n ${in_total}M;tput sgr0;echo -n " TOTALOUT ";tput setf 4;echo -n ${out_total}M;tput sgr0
-	echo -n "$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M"	
-	tput rc
+
+#	part2高亮刷屏
+#	echo -e "$nic:IN \e[1;31m${in_diff}K\e[0m OUT \e[1;31m${out_diff}K\e[0m TOTALIN \e[1;31m${in_total}M\e[0m TOTALOUT \e[1;31m${out_total}M\e[0m"
+
+#	part3无高亮单行输出
+#	echo -ne "\e[s$nic:IN ${in_diff}K OUT ${out_diff}K TOTALIN ${in_total}M TOTALOUT ${out_total}M\e[u"
+
+#	part4高亮单行输出
+#	echo -ne "\e[s$nic:IN \e[1;31m${in_diff}K\e[0m OUT \e[1;31m${out_diff}K\e[0m TOTALIN \e[1;31m${in_total}M\e[0m TOTALOUT \e[1;31m${out_total}M\e[0m\e[u"
+
 	in_orig=${in}
 	out_orig=${out}
 done
