@@ -87,14 +87,14 @@ static gboolean time_handler(GtkWidget *widget)//定时器
 {
 	downloadhtml();
 	PWTARGET pinfo = parhtml(cuthtml(szcontent));
-	sprintf(szcontent, "信息来源于%s\n%s\t%s\n", szurl, pinfo->szplace, \
+	sprintf(szcontent, "\n\t信息来源于%s\n\t%s\t%s\t\n", szurl, pinfo->szplace, \
 	        pinfo->sztime);
 	PWEATHER_INFO ppre = pinfo->weatherinfo;
 
 	do
 	{
 		PWEATHER_INFO pcur = ppre;
-		sprintf(szcontent + strlen(szcontent), "%s\t%s\t%s\t%s\n", \
+		sprintf(szcontent + strlen(szcontent), "\t%s\t%s\t%s\t%s\t\n", \
 		        pcur->time, pcur->temp, pcur->winfo, pcur->wind);
 		ppre = ppre->next;
 	}

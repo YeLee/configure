@@ -14,6 +14,11 @@ all:
 	$(CC) -S ${PRE} -o ${ASM}
 	$(CC) ${CFLAGS} -c ${ASM} -o ${OBJ}
 	$(CC) ${LDFLAGS} ${OBJ} -o ${PROG} 
+debug:
+	$(CC) ${CFLAGS} -E ${SRC} -o ${PRE} -g
+	$(CC) -S ${PRE} -o ${ASM} -g
+	$(CC) ${CFLAGS} -c ${ASM} -o ${OBJ} -g
+	$(CC) ${LDFLAGS} ${OBJ} -o ${PROG} -g
 clean:
 	rm -f ${PROG} ${PRE} ${ASM} ${OBJ}
 install:
