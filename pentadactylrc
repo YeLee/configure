@@ -15,5 +15,8 @@ nmap ej <C-p>
 nmap ek <C-n>
 nmap ez ZZ
 nmap ef F
+nmap et T
+nmap eo O
+nmap ei g<C-g>
 
 " vim: set ft=pentadactyl:
