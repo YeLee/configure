@@ -14,5 +14,6 @@ nmap el L
 nmap ej <C-p>
 nmap ek <C-n>
 nmap ez ZZ
+nmap ef F
 
 " vim: set ft=pentadactyl:
