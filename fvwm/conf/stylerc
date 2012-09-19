@@ -5,7 +5,7 @@ DesktopName 0 "Desktop"
 ClickTime 350
 MoveThreshold 3
 EdgeScroll 0 0
-EdgeResistance 250 10
+EdgeResistance 250
 EwmhBaseStruts 0 0 0 20
 #一些默认的东西
 DefaultFont "$[Font]"
