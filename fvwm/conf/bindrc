@@ -1,0 +1,71 @@
+#Alt+F1弹出菜单
+Key F1 A M Menu FunMenu
+
+#一些窗口操作的热键
+Key F5 A 4 Close
+Key F6 A 4 Maximize
+Key F7 A 4 Iconify
+Key F8 A 4 Move
+Key F9 A 4 Resize
+Key F11 A 4 FuncFullScreen
+#Key F12 A 4 FuncStayOnTop
+
+#桌面切换热键
+Key 1 A 4 GotoPage 0 0
+Key 2 A 4 GotoPage 0 1
+Key 3 A 4 GotoPage 1 0
+Key 4 A 4 GotoPage 1 1
+Key 1 T CS MoveToPage 0 0
+Key 2 T CS MoveToPage 0 1
+Key 3 T CS MoveToPage 1 0
+Key 4 T CS MoveToPage 1 1
+
+#快捷键启动程序
+Key x A 4 Exec xterm
+Key t A 4 Exec Terminal
+Key e A 4 Exec Thunar
+Key l A 4 Exec leafpad
+Key g A 4 Exec gimp
+Key s A 4 Exec smplayer
+Key m A 4 Exec claws-mail
+Key c A 4 Exec gucharmap
+Key b A 4 Exec VirtualBox
+Key v A 4 Exec xterm -e vim
+Key Up A 4 Exec audacious -p
+Key Down A 4 Exec audacious -s
+Key Left A 4 Exec audacious -r
+Key Right A 4 Exec audacious -f
+Key f A 4 Exec ~/.mozilla/firefox-shm.sh
+Key Print A A Exec ~/.config/xfce4/screenshot.sh
+
+Key XF86AudioMute A A Exec exec amixer set Master toggle
+Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-
+Key XF86AudioRaiseVolume A A Exec exec amixer set Master 10%+
+
+#鼠标按钮绑定
+Mouse 3 R A Menu FunMenu
+Mouse 1 R A Menu FunMenu
+
+Mouse 1 2 A Close
+Mouse 1 4 A Maximize
+Mouse 1 6 A Iconify
+
+#网上找的窗口全屏函数
+DestroyFunc FuncFullScreen
+AddtoFunc FuncFullScreen
++ I Current (State 0) Fullscreen-Stop
++ I TestRc Current (Maximizable) Fullscreen-Start
+
+DestroyFunc Fullscreen-Start
+AddtoFunc Fullscreen-Start
++ I WindowStyle NoTitle, HandleWidth 0 ,FixedSize, FixedPosition
++ I Current (!Maximized) Maximize
++ I ResizeMaximize 100 100
++ I State 0 true
+
+DestroyFunc Fullscreen-Stop
+AddtoFunc Fullscreen-Stop
++ I DestroyWindowStyle
++ I State 0 false
++ I Maximize
+

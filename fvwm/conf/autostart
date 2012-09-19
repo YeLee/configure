@@ -1,0 +1,33 @@
+#启动函数
+DestroyFunc StartFunction
+AddToFunc StartFunction
++ I Module FvwmAuto 500 Raise Nop
++ I Module FvwmAnimate
++ I Module FvwmTaskBar
++ I Exec xcompmgr
++ I Exec xrdb ~/.Xresources
++ I Exec fvwm-root --retain-pixmap /mnt/Picture/back.png
++ I Exec stalonetray
++ I Exec /usr/libexec/polkit-gnome-authentication-agent-1
++ I Exec start-pulseaudio-x11
++ I Exec gnome-keyring-daemon --start --components=gpg
++ I Exec gnome-keyring-daemon --start --components=pkcs11
++ I Exec gnome-keyring-daemon --start --components=secrets
++ I Exec gnome-keyring-daemon --start --components=ssh
++ I Exec nm-applet
++ I Exec xfce4-clipman
++ I Exec fcitx-autostart
+
+#退出函数
+DestroyFunc ExitFunction
+AddToFunc ExitFunction
++ I Exec killall fcitx
++ I Exec killall xfce4-clipman
++ I Exec killall nm-applet
++ I Exec killall pulseaudio
++ I Exec killall gnome-keyring-daemon
++ I Exec killall polkit-gnome-authentication-agent-1
++ I Exec killall stalonetray
++ I Exec killall fvwm-root
++ I Exec killall xcompmgr
+

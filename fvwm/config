@@ -1,0 +1,17 @@
+#一些环境变量
+SetEnv FVWM_DIR  $[HOME]/.fvwm
+SetEnv FVWM_CONF $[FVWM_DIR]/conf
+SetEnv FVWM_ICON $[FVWM_DIR]/icons
+SetEnv FVWM_CUR $[FVWM_DIR]/cursors
+SetEnv FVWM_DEC $[FVWM_DIR]/decoration
+SetEnv Font "StringEncoding=utf8:xft:WenQuanYi Micro Hei:size=9:encoding=iso10646-1"
+
+#配置文件
+Read $[FVWM_CONF]/stylerc
+Read $[FVWM_CONF]/bindrc
+Read $[FVWM_CONF]/menurc
+Read $[FVWM_CONF]/cursorrc
+Read $[FVWM_CONF]/autostart
+#测试的配置文件
+Read $[FVWM_CONF]/temp
+

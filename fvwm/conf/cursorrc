@@ -1,0 +1,26 @@
+#自定义的鼠标主题，这里直接用了oxy-white的光标。
+CursorStyle POSITION $[FVWM_CUR]/move.png
+CursorStyle TITLE $[FVWM_CUR]/point.png
+CursorStyle DEFAULT $[FVWM_CUR]/point.png
+CursorStyle SYS $[FVWM_CUR]/point.png
+CursorStyle MOVE $[FVWM_CUR]/move.png
+CursorStyle RESIZE $[FVWM_CUR]/move.png
+CursorStyle WAIT $[FVWM_CUR]/wait.png
+CursorStyle MENU $[FVWM_CUR]/point.png
+CursorStyle SELECT $[FVWM_CUR]/crosshair.png
+CursorStyle DESTROY $[FVWM_CUR]/pirate.png
+CursorStyle TOP $[FVWM_CUR]/h-resize.png
+CursorStyle RIGHT $[FVWM_CUR]/w-resize.png
+CursorStyle BOTTOM $[FVWM_CUR]/h-resize.png
+CursorStyle LEFT $[FVWM_CUR]/w-resize.png
+CursorStyle TOP_LEFT $[FVWM_CUR]/f-resize.png
+CursorStyle TOP_RIGHT $[FVWM_CUR]/b-resize.png
+CursorStyle BOTTOM_LEFT $[FVWM_CUR]/b-resize.png
+CursorStyle BOTTOM_RIGHT $[FVWM_CUR]/f-resize.png
+CursorStyle TOP_EDGE $[FVWM_CUR]/h-resize.png
+CursorStyle RIGHT_EDGE $[FVWM_CUR]/w-resize.png
+CursorStyle BOTTOM_EDGE $[FVWM_CUR]/h-resize.png
+CursorStyle LEFT_EDGE $[FVWM_CUR]/w-resize.png
+CursorStyle ROOT $[FVWM_CUR]/point.png
+CursorStyle STROKE $[FVWM_CUR]/plus.png
+

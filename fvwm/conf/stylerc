@@ -1,0 +1,82 @@
+#一些桌面和默认的设定
+DesktopSize 2x2
+DesktopName 0 "Desktop"
+#鼠标事件
+ClickTime 350
+MoveThreshold 3
+EdgeScroll 0 0
+EdgeResistance 250 10
+EwmhBaseStruts 0 0 0 20
+#一些默认的东西
+DefaultFont "$[Font]"
+DefaultColorset 6
+#去掉讨厌的九宫格
+OpaqueMoveSize unlimited
+
+#配色方案
+Colorset 5 RootTransparent buffer, fg lightgray, bg #777777, Tint black 20
+Colorset 6 RootTransparent buffer, fg yellow, bg #777777, Tint white 20
+
+#菜单样式
+MenuStyle * BorderWidth 0, Hilight3DThickness 0, Animation on, ActiveFore Red, MenuFace HGradient 128 2 lightgrey 50 snow 50 white
+
+#一些杂碎的样式
+Style * TitleAtTop
+Style * ResizeOpaque
+Style * iconSize 100 100
+Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
+Style * Colorset 5, HilightColorset 6
+Style * ClickToFocus, MouseFocusClickRaises
+
+#指定窗口样式
+Style "Firefox" StartsOnPage 0 0
+Style "gimp" StartsOnPage 0 1
+Style "smplayer" StartsOnPage 0 1
+Style "xterm" StartsOnPage 1 0,!Title
+Style "Terminal" StartsOnPage 1 0
+Style "leafpad" StartsOnPage 1 0
+Style "Thunar" StartsOnPage 1 0
+Style "VirtualBox" StartsOnPage 1 1
+Style "stalonetray" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
+Style "FvwmTaskBar" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable, FixedSize, FixedPosition
+
+#边框那和按钮样式
+ButtonStyle 2 Activeup (Pixmap $[FVWM_DEC]/button-red-icon.png)
+ButtonStyle 2 ActiveDown (Pixmap $[FVWM_DEC]/button-red.png)
+ButtonStyle 2 Inactive (Pixmap $[FVWM_DEC]/button-gray-red.png)
+ButtonStyle 4 Activeup (Pixmap $[FVWM_DEC]/button-green-icon.png)
+ButtonStyle 4 ActiveDown (Pixmap $[FVWM_DEC]/button-green.png)
+ButtonStyle 4 Inactive (Pixmap $[FVWM_DEC]/button-gray-green.png)
+ButtonStyle 6 Activeup (Pixmap $[FVWM_DEC]/button-yellow-icon.png)
+ButtonStyle 6 ActiveDown (Pixmap $[FVWM_DEC]/button-yellow.png)
+ButtonStyle 6 Inactive (Pixmap $[FVWM_DEC]/button-gray-yellow.png)
+
+TitleStyle -- Flat
+BorderStyle -- Flat
+ButtonStyle All -- flat
+ButtonStyle All -- UseTitleStyle
+
+#动画
+*FvwmAnimate: Delay 25
+*FvwmAnimate: Effect Random     
+*FvwmAnimate: Width 3 
+
+#任务栏
+*FvwmTaskBar: UseSkipList  
+*FvwmTaskBar: AutoStick    
+*FvwmTaskBar: DeskOnly   
+*FvwmTaskBar: PageOnly     
+*FvwmTaskBar: ScreenOnly 
+*FvwmTaskBar: 3DFvwm             
+*FvwmTaskBar: ShowTips         
+*FvwmTaskBar: StartName FVWM           
+*FvwmTaskBar: StartMenu FunMenu        
+*FvwmTaskBar: Font "$[Font]"           
+*FvwmTaskBar: SelFont "$[Font]"  
+*FvwmTaskBar: StatusFont "$[Font]"     
+*FvwmTaskBar: UpdateInterval 1
+*FvwmTaskBar: ClockFormat %H:%M:%S
+*FvwmTaskBar: Action Click1 Raise
+*FvwmTaskBar: Action Click3 Iconify Off
+*FvwmTaskBar: WindowButtonsRightMargin 20
+
