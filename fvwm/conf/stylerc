@@ -38,6 +38,7 @@ Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
 Style "stalonetray" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
+#Style "trayer" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
 Style "FvwmTaskBar" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable, FixedSize, FixedPosition
 
 #边框那和按钮样式

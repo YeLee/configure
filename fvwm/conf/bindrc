@@ -36,7 +36,7 @@ Key Down A 4 Exec audacious -s
 Key Left A 4 Exec audacious -r
 Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
-Key Print A A Exec ~/.config/xfce4/screenshot.sh
+Key Print A A Exec $[FVWM_DIR]/screenshot.sh
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle
 Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-
