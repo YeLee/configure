@@ -12,8 +12,8 @@ do
 		fvwm-root --retain-pixmap $i
 		sleep $intertime
 		if [ -z $(pgrep fvwm) ];then
+			rm /tmp/wallpaper
 			exit 0
-			rm -f /tmp/wallpaper
 		fi
 	done
 done

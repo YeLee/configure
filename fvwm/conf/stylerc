@@ -41,7 +41,7 @@ Style "stalonetray" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0
 #Style "trayer" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
 Style "FvwmTaskBar" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable, FixedSize, FixedPosition
 
-#边框那和按钮样式
+#边框和按钮样式
 ButtonStyle 2 Activeup (Pixmap $[FVWM_DEC]/button-red-icon.png)
 ButtonStyle 2 ActiveDown (Pixmap $[FVWM_DEC]/button-red.png)
 ButtonStyle 2 Inactive (Pixmap $[FVWM_DEC]/button-gray-red.png)
