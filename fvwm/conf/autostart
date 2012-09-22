@@ -5,10 +5,10 @@ AddToFunc StartFunction
 + I Module FvwmAnimate
 + I Module FvwmTaskBar
 + I Exec xcompmgr
+#+ I Exec stalonetray
++ I Exec trayer-srg --edge top --align right --margin 0 --widthtype request --heighttype pixel --height 24 --SetDockType false --SetPartialStrut false --transparent true --alpha 255 --tint 0 --distance 0 --expand true --padding 0
 + I Exec xrdb ~/.Xresources
 + I Exec $[FVWM_DIR]/wallpaper.sh /mnt/Picture/wallpaper
-+ I Exec stalonetray
-#+ I Exec trayer
 + I Exec /usr/libexec/polkit-gnome-authentication-agent-1
 + I Exec start-pulseaudio-x11
 + I Exec nm-applet
@@ -23,8 +23,8 @@ AddToFunc ExitFunction
 + I Exec killall nm-applet
 + I Exec killall pulseaudio
 + I Exec killall polkit-gnome-authentication-agent-1
-+ I Exec killall stalonetray
-#+ I Exec killall trayer
+#+ I Exec killall stalonetray
++ I Exec killall trayer-srg
 + I Exec killall fvwm-root
 + I Exec killall xcompmgr
 

@@ -37,8 +37,8 @@ Style "Terminal" StartsOnPage 1 0
 Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
-Style "stalonetray" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
-#Style "trayer" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, !StaysOnTop, StaysPut, !Handles, !Borders
+#Style "stalonetray"  !Title, WindowListSkip, BorderWidth 0, HandleWidth 0, !Handles, !Borders
+Style "trayer" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable, FixedSize, FixedPosition
 Style "FvwmTaskBar" !Title, Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable, FixedSize, FixedPosition
 
 #边框和按钮样式
@@ -70,7 +70,8 @@ ButtonStyle All -- UseTitleStyle
 *FvwmTaskBar: ScreenOnly 
 *FvwmTaskBar: 3DFvwm             
 *FvwmTaskBar: ShowTips         
-*FvwmTaskBar: StartName FVWM           
+*FvwmTaskBar: StartName
+*FvwmTaskBar: StartIcon $[FVWM_DIR]/icons/fvwm.png
 *FvwmTaskBar: StartMenu FunMenu        
 *FvwmTaskBar: Font "$[Font]"           
 *FvwmTaskBar: SelFont "$[Font]"  
