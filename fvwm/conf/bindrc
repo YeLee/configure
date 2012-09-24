@@ -37,6 +37,7 @@ Key Left A 4 Exec audacious -r
 Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
 Key Print A A Exec $[FVWM_DIR]/screenshot.sh
+Key F12 A N QuickTerminal
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle
 Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-
@@ -68,4 +69,13 @@ AddtoFunc Fullscreen-Stop
 + I DestroyWindowStyle
 + I State 0 false
 + I Maximize
+
+#网上找的QuickTerminal
+DestroyFunc QuickTerminal
+AddToFunc QuickTerminal
++ I All (QuickTerminal, CurrentDesk) Iconify
++ I TestRc (NoMatch) Exec LC_CTYPE=zh_CN.utf8 xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
++ I wait QuickTerminal
++ I All (QuickTerminal, CurrentDesk) Resize 600p 300p
++ I All (QuickTerminal, CurrentDesk) Move 383p 0p
 

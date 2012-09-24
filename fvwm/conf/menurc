@@ -31,7 +31,7 @@ AddToMenu network
 
 DestroyMenu system
 AddToMenu system
-+ "%$[FVWM_ICON]/xterm.png%魔法" Exec exec xterm
++ "%$[FVWM_ICON]/xterm.png%魔法" Exec LC_CTYPE=zh_CN.utf8 xterm
 + "%$[FVWM_ICON]/utilities-terminal.png%终端"   Exec exec Terminal
 + "%$[FVWM_ICON]/palimpsest.png%磁盘"   Exec exec palimpsest
 + "%$[FVWM_ICON]/utilities-system-monitor.png%杀手"   Exec exec xfce4-taskmanager
