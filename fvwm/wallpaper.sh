@@ -5,6 +5,14 @@ if [ -e /tmp/wallpaper ];then
 else
 	touch /tmp/wallpaper
 fi
+
+signal_handle()
+{
+	rm /tmp/wallpaper
+	exit 1
+}
+trap signal_handle SIGHUP SIGINT SIGQUIT SIGABRT SIGKILL SIGALRM SIGTERM
+	
 while true
 do
 	for i in $(find $1 -type f -name "*.png")
