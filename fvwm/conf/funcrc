@@ -1,0 +1,46 @@
+#网上找的窗口全屏函数
+DestroyFunc FuncFullScreen
+AddtoFunc FuncFullScreen
++ I Current (State 5) Fullscreen-Stop
++ I TestRc Current (Maximizable) Fullscreen-Start
+
+DestroyFunc Fullscreen-Start
+AddtoFunc Fullscreen-Start
++ I WindowStyle NoTitle, HandleWidth 0 ,FixedSize, FixedPosition
++ I Current (!Maximized) Maximize
++ I ResizeMaximize 100 100
++ I State 5 true
+
+DestroyFunc Fullscreen-Stop
+AddtoFunc Fullscreen-Stop
++ I DestroyWindowStyle
++ I Maximize
++ I State 5 false
+
+#网上找的窗口置顶函数
+DestroyFunc FuncOnTop
+AddtoFunc FuncOnTop
++ I Current (State 6) OnTop-Stop
++ I TestRc (Match) break
++ I TestRc (NoMatch) OnTop-Start
+
+DestroyFunc OnTop-Start
+AddtoFunc OnTop-Start
++ I WindowStyle StaysOnTop
++ I State 6 true
+
+DestroyFunc OnTop-Stop
+AddtoFunc OnTop-Stop
++ I WindowStyle StaysPut
++ I State 6 false
+
+#网上找的QuickTerminal
+DestroyFunc QuickTerminal
+AddToFunc QuickTerminal
++ I All (QuickTerminal, CurrentDesk) Iconify
++ I TestRc (Match) break
++ I TestRc (NoMatch) Exec LC_CTYPE=zh_CN.utf8 xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
++ I wait QuickTerminal
++ I All (QuickTerminal, CurrentDesk) Resize 750p 300p
++ I All (QuickTerminal, CurrentDesk) Move 308p 0p
+

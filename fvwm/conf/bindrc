@@ -7,8 +7,8 @@ Key F6 A 4 Maximize
 Key F7 A 4 Iconify
 Key F8 A 4 Move
 Key F9 A 4 Resize
+Key F10 A 4 FuncOnTop
 Key F11 A 4 FuncFullScreen
-#Key F12 A 4 FuncStayOnTop
 
 #桌面切换热键
 Key 1 A 4 GotoPage 0 0
@@ -50,32 +50,4 @@ Mouse 1 R A Menu FunMenu
 Mouse 1 2 A Close
 Mouse 1 4 A Maximize
 Mouse 1 6 A Iconify
-
-#网上找的窗口全屏函数
-DestroyFunc FuncFullScreen
-AddtoFunc FuncFullScreen
-+ I Current (State 0) Fullscreen-Stop
-+ I TestRc Current (Maximizable) Fullscreen-Start
-
-DestroyFunc Fullscreen-Start
-AddtoFunc Fullscreen-Start
-+ I WindowStyle NoTitle, HandleWidth 0 ,FixedSize, FixedPosition
-+ I Current (!Maximized) Maximize
-+ I ResizeMaximize 100 100
-+ I State 0 true
-
-DestroyFunc Fullscreen-Stop
-AddtoFunc Fullscreen-Stop
-+ I DestroyWindowStyle
-+ I State 0 false
-+ I Maximize
-
-#网上找的QuickTerminal
-DestroyFunc QuickTerminal
-AddToFunc QuickTerminal
-+ I All (QuickTerminal, CurrentDesk) Iconify
-+ I TestRc (NoMatch) Exec LC_CTYPE=zh_CN.utf8 xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
-+ I wait QuickTerminal
-+ I All (QuickTerminal, CurrentDesk) Resize 600p 300p
-+ I All (QuickTerminal, CurrentDesk) Move 383p 0p
 

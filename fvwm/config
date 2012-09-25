@@ -8,6 +8,7 @@ SetEnv Font "StringEncoding=utf8:xft:WenQuanYi Micro Hei:size=9:encoding=iso1064
 
 #配置文件
 Read $[FVWM_CONF]/stylerc
+Read $[FVWM_CONF]/funcrc
 Read $[FVWM_CONF]/bindrc
 Read $[FVWM_CONF]/menurc
 Read $[FVWM_CONF]/cursorrc
