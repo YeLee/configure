@@ -39,7 +39,7 @@ DestroyFunc QuickTerminal
 AddToFunc QuickTerminal
 + I All (QuickTerminal, CurrentDesk) Iconify
 + I TestRc (Match) break
-+ I TestRc (NoMatch) Exec LC_CTYPE=zh_CN.utf8 xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
++ I TestRc (NoMatch) Exec xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
 + I wait QuickTerminal
 + I All (QuickTerminal, CurrentDesk) Resize 750p 300p
 + I All (QuickTerminal, CurrentDesk) Move 308p 0p

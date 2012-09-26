@@ -21,7 +21,7 @@ Key 3 T CS MoveToPage 1 0
 Key 4 T CS MoveToPage 1 1
 
 #快捷键启动程序
-Key x A 4 Exec LC_CTYPE=zh_CN.utf8 xterm
+Key x A 4 Exec xterm
 Key t A 4 Exec Terminal
 Key e A 4 Exec Thunar
 Key l A 4 Exec leafpad
