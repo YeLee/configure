@@ -10,39 +10,39 @@ AddToMenu FunMenu "%$[FVWM_ICON]/FunMenu.png%应用程序"   Title Top
 
 DestroyMenu graphics
 AddToMenu graphics
-+ "%$[FVWM_ICON]/gimp.png%修边"   Exec exec gimp-2.6 
-+ "%$[FVWM_ICON]/mirage.png%蜃景"   Exec exec mirage 
-+ "%$[FVWM_ICON]/gnome-screenshot.png%截图" Exec exec $[FVWM_DIR]/screenshot.sh
++ "%$[FVWM_ICON]/gimp.png%修边"   Exec exec gimp-2.6
++ "%$[FVWM_ICON]/mirage.png%蜃景"   Exec exec mirage
++ "%$[FVWM_ICON]/screenshot.png%截图" Exec exec $[FVWM_DIR]/screenshot.sh
 
 DestroyMenu media
 AddToMenu media
-+ "%$[FVWM_ICON]/audacious.png%胆量"   Exec exec audacious 
-+ "%$[FVWM_ICON]/smplayer.png%舞台"   Exec exec smplayer 
++ "%$[FVWM_ICON]/audacious.png%胆量"   Exec exec audacious
++ "%$[FVWM_ICON]/smplayer.png%舞台"   Exec exec smplayer
 + "%$[FVWM_ICON]/multimedia-volume-control.png%音控"   Exec exec pavucontrol
 + "%$[FVWM_ICON]/multimedia-volume-control.png%混音"   Exec exec xfce4-mixer
 
 DestroyMenu network
 AddToMenu network
-+ "%$[FVWM_ICON]/firefox.png%焰舞"   Exec exec firefox 
-+ "%$[FVWM_ICON]/claws-mail.png%魔爪"   Exec exec claws-mail 
++ "%$[FVWM_ICON]/firefox.png%焰舞"   Exec exec firefox
++ "%$[FVWM_ICON]/claws-mail.png%魔爪"   Exec exec claws-mail
 + "%$[FVWM_ICON]/pidgin.png%知己"   Exec exec pidgin
-+ "%$[FVWM_ICON]/preferences-system-network.png%连接"   Exec exec nm-connection-editor
-+ "%$[FVWM_ICON]/nm-device-wireless.png%网络"   Exec exec nm-applet
++ "%$[FVWM_ICON]/nm-connection-editor.png%连接"   Exec exec nm-connection-editor
++ "%$[FVWM_ICON]/nm-applet.png%网络"   Exec exec nm-applet
 
 DestroyMenu system
 AddToMenu system
-+ "%$[FVWM_ICON]/xterm.png%魔法" Exec xterm
-+ "%$[FVWM_ICON]/utilities-terminal.png%终端"   Exec exec Terminal
++ "%$[FVWM_ICON]/xterm.png%魔法" Exec exec xterm
++ "%$[FVWM_ICON]/terminal.png%终端"   Exec exec Terminal
 + "%$[FVWM_ICON]/palimpsest.png%磁盘"   Exec exec palimpsest
-+ "%$[FVWM_ICON]/utilities-system-monitor.png%杀手"   Exec exec xfce4-taskmanager
++ "%$[FVWM_ICON]/taskmanager.png%杀手"   Exec exec xfce4-taskmanager
 + "%$[FVWM_ICON]/virtualbox.png%魔盒"   Exec exec VirtualBox
 
 DestroyMenu utility
 AddToMenu utility
-+ "%$[FVWM_ICON]/leafpad.png%叶笺"   Exec exec leafpad 
-+ "%$[FVWM_ICON]/Thunar.png%宝库"   Exec exec thunar 
-+ "%$[FVWM_ICON]/file-roller.png%归档"   Exec exec file-roller 
-+ "%$[FVWM_ICON]/accessories-character-map.png%字符"   Exec exec gucharmap
++ "%$[FVWM_ICON]/leafpad.png%叶笺"   Exec exec leafpad
++ "%$[FVWM_ICON]/Thunar.png%宝库"   Exec exec thunar
++ "%$[FVWM_ICON]/file-roller.png%归档"   Exec exec file-roller
++ "%$[FVWM_ICON]/gucharmap.png%字符"   Exec exec gucharmap
 
 DestroyMenu FVWM
 AddToMenu FVWM
@@ -53,3 +53,4 @@ AddToMenu FVWM
 + "%$[FVWM_ICON]/suspend.png%挂起电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
 + "%$[FVWM_ICON]/reboot.png%重启电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
 + "%$[FVWM_ICON]/shutdown.png%关闭电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
+
