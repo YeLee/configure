@@ -12,7 +12,7 @@ DestroyMenu graphics
 AddToMenu graphics
 + "%$[FVWM_ICON]/gimp.png%修边"   Exec exec gimp-2.6
 + "%$[FVWM_ICON]/mirage.png%蜃景"   Exec exec mirage
-+ "%$[FVWM_ICON]/screenshot.png%截图" Exec exec $[FVWM_DIR]/screenshot.sh
++ "%$[FVWM_ICON]/screenshot.png%截图" Exec exec $[FVWM_USERDIR]/screenshot.sh
 
 DestroyMenu media
 AddToMenu media

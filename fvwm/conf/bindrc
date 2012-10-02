@@ -3,7 +3,7 @@ Key F1 A M Menu FunMenu
 
 #一些窗口操作的热键
 Key F5 A 4 Close
-Key F6 A 4 Maximize
+Key F6 A 4 FunMaximize
 Key F7 A 4 Iconify
 Key F8 A 4 Move
 Key F9 A 4 Resize
@@ -36,7 +36,7 @@ Key Down A 4 Exec audacious -s
 Key Left A 4 Exec audacious -r
 Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
-Key Print A A Exec $[FVWM_DIR]/screenshot.sh
+Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key F12 A N QuickTerminal
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle
@@ -48,6 +48,6 @@ Mouse 3 R A Menu FunMenu
 Mouse 1 R A Menu FunMenu
 
 Mouse 1 2 A Close
-Mouse 1 4 A Maximize
+Mouse 1 4 A FunMaximize
 Mouse 1 6 A Iconify
 

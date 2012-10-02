@@ -1,6 +1,6 @@
 #一些桌面和默认的设定
 DesktopSize 2x2
-DesktopName 0 "舟"
+DesktopName 0 "桌面"
 #鼠标事件
 EdgeScroll 0 0
 EwmhBaseStruts 0 0 0 20
@@ -19,6 +19,7 @@ MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, M
 
 #一些杂碎的样式
 Style * ResizeOpaque
+Style * ResizeHintOverride
 Style * iconSize 100 100
 Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
 Style * Colorset 5, HilightColorset 6
@@ -35,7 +36,7 @@ Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
 Style "xterm" StaysOnTop, FixedSize, FixedPosition, BorderWidth 0,HandleWidth 0, !Title
 Style "trayer" Sticky, StaysOnBottom, FixedSize, FixedPosition, WindowListSkip, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable
-Style "FvwmTaskBar" Sticky, StaysPut, FixedSize, FixedPosition, WindowListSkip, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable
+Style "FvwmTaskBar" Sticky, StaysPut, FixedSize, FixedPosition, NeverFocus, WindowListSkip, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 
 #边框和按钮样式
@@ -67,7 +68,7 @@ ButtonStyle All -- UseTitleStyle
 *FvwmTaskBar: ScreenOnly
 *FvwmTaskBar: 3DFvwm
 *FvwmTaskBar: ShowTips
-*FvwmTaskBar: StartName 卷
+*FvwmTaskBar: StartName 开启
 *FvwmTaskBar: StartMenu FunMenu
 *FvwmTaskBar: Font "$[Font]"
 *FvwmTaskBar: SelFont "$[Font]"

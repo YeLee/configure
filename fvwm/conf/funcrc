@@ -1,38 +1,36 @@
 #网上找的窗口全屏函数
 DestroyFunc FuncFullScreen
 AddtoFunc FuncFullScreen
-+ I Current (State 5) Fullscreen-Stop
-+ I TestRc Current (Maximizable) Fullscreen-Start
-
-DestroyFunc Fullscreen-Start
-AddtoFunc Fullscreen-Start
-+ I WindowStyle NoTitle, HandleWidth 0 ,FixedSize, FixedPosition
++ I Current (State 5)
++ I State 5 toggle
++ I TestRc (Match) DestroyWindowStyle
++ I TestRc (Match) Maximize
++ I TestRc (Match) break
++ I TestRc Current (!Maximizable) break
++ I WindowStyle NoTitle, HandleWidth 0, FixedSize, FixedPosition
 + I Current (!Maximized) Maximize
 + I ResizeMaximize 100 100
-+ I State 5 true
-
-DestroyFunc Fullscreen-Stop
-AddtoFunc Fullscreen-Stop
-+ I DestroyWindowStyle
-+ I Maximize
-+ I State 5 false
 
 #网上找的窗口置顶函数
 DestroyFunc FuncOnTop
 AddtoFunc FuncOnTop
-+ I Current (State 6) OnTop-Stop
++ I Current (State 6)
++ I State 6 toggle
++ I TestRc (Match) WindowStyle StaysPut
 + I TestRc (Match) break
-+ I TestRc (NoMatch) OnTop-Start
++ I TestRc (NoMatch) WindowStyle StaysOnTop
 
-DestroyFunc OnTop-Start
-AddtoFunc OnTop-Start
-+ I WindowStyle StaysOnTop
-+ I State 6 true
-
-DestroyFunc OnTop-Stop
-AddtoFunc OnTop-Stop
-+ I WindowStyle StaysPut
-+ I State 6 false
+#网上找的窗口最大化函数
+Key n A 4 FunMaximize
+DestroyFunc FunMaximize
+AddtoFunc FunMaximize
++ I Current (State 7)
++ I State 7 toggle
++ I TestRc (Match) DestroyWindowStyle
++ I TestRc (Match) Maximize
++ I TestRc (Match) break
++ I TestRc (NoMatch) WindowStyle FixedSize, FixedPosition
++ I TestRc (NoMatch) Maximize 100 100
 
 #网上找的QuickTerminal
 DestroyFunc QuickTerminal
