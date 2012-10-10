@@ -33,7 +33,6 @@ DestroyMenu system
 AddToMenu system
 + "%$[FVWM_ICON]/xterm.png%魔法" Exec exec xterm
 + "%$[FVWM_ICON]/terminal.png%终端"   Exec exec Terminal
-+ "%$[FVWM_ICON]/palimpsest.png%磁盘"   Exec exec palimpsest
 + "%$[FVWM_ICON]/taskmanager.png%杀手"   Exec exec xfce4-taskmanager
 + "%$[FVWM_ICON]/virtualbox.png%魔盒"   Exec exec VirtualBox
 
