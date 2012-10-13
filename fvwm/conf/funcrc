@@ -42,3 +42,8 @@ AddToFunc QuickTerminal
 + I All (QuickTerminal, CurrentDesk) Resize 750p 300p
 + I All (QuickTerminal, CurrentDesk) Move 308p 0p
 
+#网上找的托盘隐藏函数
+DestroyFunc functray
+AddToFunc functray
++ I All (trayer, CurrentDesk) Iconify
+

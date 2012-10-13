@@ -38,6 +38,7 @@ Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
 Key d A 4 Exec $[FVWM_USERDIR]/time.sh
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
+Key h A 4 functray
 Key F12 A N QuickTerminal
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle

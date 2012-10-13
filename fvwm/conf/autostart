@@ -5,6 +5,8 @@ AddToFunc StartFunction
 + I Module FvwmAnimate
 + I Exec compton
 + I Exec trayer-srg --edge top --align right --margin 0 --widthtype request --heighttype pixel --height 24 --SetDockType false --SetPartialStrut false --transparent true --alpha 255 --tint 0 --distance 0 --expand true --padding 0
++ I wait trayer
++ I All (trayer, CurrentDesk) Iconify
 + I Exec xrdb ~/.Xresources
 + I Exec $[FVWM_USERDIR]/wallpaper.sh /mnt/Picture/wallpaper
 + I Exec /usr/libexec/polkit-gnome-authentication-agent-1

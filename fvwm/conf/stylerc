@@ -35,7 +35,7 @@ Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
 Style "xterm" StaysOnTop, FixedSize, FixedPosition, BorderWidth 0,HandleWidth 0, !Title
-Style "trayer" Sticky, StaysOnBottom, FixedSize, FixedPosition, WindowListSkip, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Iconifiable, !Maximizable
+Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 
 #边框和按钮样式
