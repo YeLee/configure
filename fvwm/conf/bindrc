@@ -40,6 +40,7 @@ Key d A 4 Exec $[FVWM_USERDIR]/time.sh
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 functray
 Key F12 A N QuickTerminal
+Key r A 4 Module FvwmForm FvwmRun
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle
 Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-

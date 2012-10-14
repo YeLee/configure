@@ -59,3 +59,21 @@ ButtonStyle All -- UseTitleStyle
 *FvwmAnimate: Effect Random
 *FvwmAnimate: Width 3
 
+#运行框
+DestroyModuleConfig FvwmRun: *
+*FvwmRun: WarpPointer
+*FvwmRun: Fore Black
+*FvwmRun: Back Snow
+*FvwmRun: ItemFore Black
+*FvwmRun: ItemBack Snow
+*FvwmRun: Font "$[Font]"
+*FvwmRun: InputFont "$[Font]"
+*FvwmRun: ButtonFont "$[Font]"
+*FvwmRun: Text "运行："
+*FvwmRun: Input command 25 ""
+*FvwmRun: Line expand
+*FvwmRun: Button quit " 开始 "
+*FvwmRun: Command Exec exec $(command) &
+*FvwmRun: Button quit " 结束 "
+*FvwmRun: Command Nop
+
