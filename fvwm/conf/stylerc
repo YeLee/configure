@@ -23,6 +23,7 @@ Style * ResizeHintOverride
 Style * iconSize 100 100
 Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
 Style * Colorset 5, HilightColorset 6
+Style * IconTitleColorset 5, HilightIconTitleColorset 6
 Style * ClickToFocus, MouseFocusClickRaises
 
 #指定窗口样式
@@ -69,6 +70,7 @@ DestroyModuleConfig FvwmRun: *
 *FvwmRun: Font "$[Font]"
 *FvwmRun: InputFont "$[Font]"
 *FvwmRun: ButtonFont "$[Font]"
+*FvwmRun: Title "运行命令"
 *FvwmRun: Text "运行："
 *FvwmRun: Input command 25 ""
 *FvwmRun: Line expand
