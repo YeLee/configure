@@ -72,8 +72,8 @@ DestroyModuleConfig FvwmRun: *
 *FvwmRun: Text "运行："
 *FvwmRun: Input command 25 ""
 *FvwmRun: Line expand
-*FvwmRun: Button quit " 开始 "
+*FvwmRun: Button quit " 开始 " ^M
 *FvwmRun: Command Exec exec $(command) &
-*FvwmRun: Button quit " 结束 "
+*FvwmRun: Button quit " 结束 " ^[
 *FvwmRun: Command Nop
 
