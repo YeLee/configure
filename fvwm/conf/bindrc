@@ -2,7 +2,7 @@
 Key F1 A M Menu FunMenu
 
 #一些窗口操作的热键
-Key F5 A 4 Close
+Key F5 A 4 FuncClose
 Key F6 A 4 FunMaximize
 Key F7 A 4 Iconify
 Key F8 A 4 Move
@@ -50,7 +50,7 @@ Key XF86AudioRaiseVolume A A Exec exec amixer set Master 10%+
 Mouse 3 R A Menu FunMenu
 Mouse 1 R A Menu FunMenu
 
-Mouse 1 2 A Close
+Mouse 1 2 A FuncClose
 Mouse 1 4 A FunMaximize
 Mouse 1 6 A Iconify
 
