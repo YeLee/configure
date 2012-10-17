@@ -20,24 +20,6 @@ AddtoFunc FuncOnTop
 + I TestRc (Match) break
 + I TestRc (NoMatch) WindowStyle StaysOnTop
 
-#网上找的窗口最大化函数
-Key n A 4 FunMaximize
-DestroyFunc FunMaximize
-AddtoFunc FunMaximize
-+ I Current (State 7)
-+ I State 7 toggle
-+ I TestRc (Match) DestroyWindowStyle
-+ I TestRc (Match) Maximize
-+ I TestRc (Match) break
-+ I TestRc (NoMatch) WindowStyle FixedSize, FixedPosition
-+ I TestRc (NoMatch) Maximize 100 100
-
-#网上找的窗口关闭函数
-DestroyFunc FuncClose
-AddtoFunc FuncClose
-+ I Current (Maximized) Maximize
-+ I Current Close
-
 #网上找的QuickTerminal
 DestroyFunc QuickTerminal
 AddToFunc QuickTerminal
@@ -49,7 +31,7 @@ AddToFunc QuickTerminal
 + I All (QuickTerminal, CurrentDesk) Move 308p 0p
 
 #网上找的托盘隐藏函数
-DestroyFunc functray
-AddToFunc functray
+DestroyFunc Functray
+AddToFunc Functray
 + I All (trayer, CurrentDesk) Iconify
 
