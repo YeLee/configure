@@ -11,8 +11,8 @@ DefaultColorset 6
 OpaqueMoveSize unlimited
 
 #配色方案
-Colorset 5 RootTransparent buffer, fg lightgray, bg #777777, Tint black 20
-Colorset 6 RootTransparent buffer, fg yellow, bg #777777, Tint white 20
+Colorset 5 RootTransparent buffer, fg #A0A0A0, bg #E6E5E4, Tint black 20
+Colorset 6 RootTransparent buffer, fg #000000, bg #E6E5E4, Tint white 20
 
 #菜单样式
 MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, MenuFace HGradient 128 2 lightgrey 50 snow 50 white
@@ -40,15 +40,21 @@ Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, Borde
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 
 #边框和按钮样式
-ButtonStyle 2 Activeup (Pixmap $[FVWM_DEC]/button-red-icon.png)
-ButtonStyle 2 ActiveDown (Pixmap $[FVWM_DEC]/button-red.png)
-ButtonStyle 2 Inactive (Pixmap $[FVWM_DEC]/button-gray-red.png)
-ButtonStyle 4 Activeup (Pixmap $[FVWM_DEC]/button-green-icon.png)
-ButtonStyle 4 ActiveDown (Pixmap $[FVWM_DEC]/button-green.png)
-ButtonStyle 4 Inactive (Pixmap $[FVWM_DEC]/button-gray-green.png)
-ButtonStyle 6 Activeup (Pixmap $[FVWM_DEC]/button-yellow-icon.png)
-ButtonStyle 6 ActiveDown (Pixmap $[FVWM_DEC]/button-yellow.png)
-ButtonStyle 6 Inactive (Pixmap $[FVWM_DEC]/button-gray-yellow.png)
+ButtonStyle 1 Activeup (Pixmap $[FVWM_DEC]/top-active.png)
+ButtonStyle 1 ActiveDown (Pixmap $[FVWM_DEC]/top-pressed.png)
+ButtonStyle 1 Inactive (Pixmap $[FVWM_DEC]/top-inactive.png)
+ButtonStyle 2 Activeup (Pixmap $[FVWM_DEC]/close-active.png)
+ButtonStyle 2 ActiveDown (Pixmap $[FVWM_DEC]/close-pressed.png)
+ButtonStyle 2 Inactive (Pixmap $[FVWM_DEC]/close-inactive.png)
+ButtonStyle 3 Activeup (Pixmap $[FVWM_DEC]/full-active.png)
+ButtonStyle 3 ActiveDown (Pixmap $[FVWM_DEC]/full-pressed.png)
+ButtonStyle 3 Inactive (Pixmap $[FVWM_DEC]/full-inactive.png)
+ButtonStyle 4 Activeup (Pixmap $[FVWM_DEC]/maximize-active.png)
+ButtonStyle 4 ActiveDown (Pixmap $[FVWM_DEC]/maximize-pressed.png)
+ButtonStyle 4 Inactive (Pixmap $[FVWM_DEC]/maximize-inactive.png)
+ButtonStyle 6 Activeup (Pixmap $[FVWM_DEC]/hide-active.png)
+ButtonStyle 6 ActiveDown (Pixmap $[FVWM_DEC]/hide-pressed.png)
+ButtonStyle 6 Inactive (Pixmap $[FVWM_DEC]/hide-inactive.png)
 
 TitleStyle -- Flat
 BorderStyle -- Flat

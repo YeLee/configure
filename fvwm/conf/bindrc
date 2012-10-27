@@ -38,7 +38,7 @@ Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
 Key d A 4 Exec $[FVWM_USERDIR]/time.sh
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
-Key h A 4 functray
+Key h A 4 Functray
 Key F12 A N QuickTerminal
 Key r A 4 Module FvwmForm FvwmRun
 
@@ -50,7 +50,9 @@ Key XF86AudioRaiseVolume A A Exec exec amixer set Master 10%+
 Mouse 3 R A Menu FunMenu
 Mouse 1 R A Menu FunMenu
 
+Mouse 1 1 A FuncOnTop
 Mouse 1 2 A Close
+Mouse 1 3 A FuncFullScreen
 Mouse 1 4 A Maximize
 Mouse 1 6 A Iconify
 
