@@ -15,10 +15,10 @@ Key 1 A 4 GotoPage 0 0
 Key 2 A 4 GotoPage 0 1
 Key 3 A 4 GotoPage 1 0
 Key 4 A 4 GotoPage 1 1
-Key 1 T CS MoveToPage 0 0
-Key 2 T CS MoveToPage 0 1
-Key 3 T CS MoveToPage 1 0
-Key 4 T CS MoveToPage 1 1
+Key 1 A CS MoveToPage 0 0
+Key 2 A CS MoveToPage 0 1
+Key 3 A CS MoveToPage 1 0
+Key 4 A CS MoveToPage 1 1
 
 #快捷键启动程序
 Key x A 4 Exec xterm
