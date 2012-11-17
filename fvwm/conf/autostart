@@ -3,7 +3,7 @@ DestroyFunc StartFunction
 AddToFunc StartFunction
 + I Module FvwmAuto 500 Raise Nop
 + I Module FvwmAnimate
-+ I Exec compton
++ I Exec compton -cC -t4 -l4 -r4 -o.3 -m.9 -e.95 -i.95
 + I Exec trayer-srg --edge top --align right --margin 0 --widthtype request --heighttype pixel --height 24 --SetDockType false --SetPartialStrut false --transparent true --alpha 255 --tint 0 --distance 0 --expand true --padding 0
 + I wait trayer
 + I All (trayer, CurrentDesk) Iconify

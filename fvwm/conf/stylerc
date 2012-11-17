@@ -11,8 +11,8 @@ DefaultColorset 6
 OpaqueMoveSize unlimited
 
 #配色方案
-Colorset 5 RootTransparent buffer, fg #A0A0A0, bg #E6E5E4, Tint black 20
-Colorset 6 RootTransparent buffer, fg #000000, bg #E6E5E4, Tint white 20
+Colorset 5 RootTransparent buffer, fg #A0A0A0, bg #E6E5E4
+Colorset 6 RootTransparent buffer, fg #000000, bg #E6E5E4
 
 #菜单样式
 MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, MenuFace HGradient 128 2 lightgrey 50 snow 50 white
@@ -20,10 +20,11 @@ MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, M
 #一些杂碎的样式
 Style * ResizeOpaque
 Style * ResizeHintOverride
-Style * iconSize 100 100
 Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
 Style * Colorset 5, HilightColorset 6
-Style * IconTitleColorset 5, HilightIconTitleColorset 6
+Style * !IconTitle, IconTitleColorset 5, HilightIconTitleColorset 6
+Style * IndexedIconName, IconGrid 20 20, IconSize 60 60
+Style * IconTitleRelief 0, IconBackgroundPadding 0, IconBackgroundRelief 0
 Style * ClickToFocus, MouseFocusClickRaises
 
 #指定窗口样式
@@ -35,7 +36,7 @@ Style "Terminal" StartsOnPage 1 0
 Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
-Style "xterm" StaysOnTop, FixedSize, FixedPosition, BorderWidth 0,HandleWidth 0, !Title
+Style "xterm" StaysOnTop, BorderWidth 0,HandleWidth 0, !Title
 Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
 

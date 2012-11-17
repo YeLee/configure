@@ -35,3 +35,7 @@ DestroyFunc Functray
 AddToFunc Functray
 + I All (trayer, CurrentDesk) Iconify
 
+#修正系统函数：恢复窗口时，鼠标居中
+AddToFunc WindowListFunc
++ I WarpToWindow 50 50
+

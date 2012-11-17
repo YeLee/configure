@@ -1,5 +1,5 @@
 #!/bin/bash
-intertime=1800
+intertime=3600
 wallpaper=/tmp/wallpaper
 if [ -e $wallpaper  ];then
 	exit 0
