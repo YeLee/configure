@@ -18,13 +18,11 @@ Colorset 6 RootTransparent buffer, fg #000000, bg #E6E5E4
 MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, MenuFace HGradient 128 2 lightgrey 50 snow 50 white
 
 #一些杂碎的样式
+Style * NoIcon
 Style * ResizeOpaque
 Style * ResizeHintOverride
 Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
 Style * Colorset 5, HilightColorset 6
-Style * !IconTitle, IconTitleColorset 5, HilightIconTitleColorset 6
-Style * IndexedIconName, IconGrid 20 20, IconSize 60 60
-Style * IconTitleRelief 0, IconBackgroundPadding 0, IconBackgroundRelief 0
 Style * ClickToFocus, MouseFocusClickRaises
 
 #指定窗口样式
@@ -37,8 +35,8 @@ Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0
 Style "VirtualBox" StartsOnPage 1 1
 Style "xterm" StaysOnTop, BorderWidth 0,HandleWidth 0, !Title
-Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
-Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !IconTitle, !Maximizable
+Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
+Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
 
 #边框和按钮样式
 ButtonStyle 1 Activeup (Pixmap $[FVWM_DEC]/top-active.png)
