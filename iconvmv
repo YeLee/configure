@@ -1,0 +1,11 @@
+#!/bin/bash
+[ $# -gt 0 ] || echo "Usage : $0 filename"
+while [ $# -gt 0 ]
+do
+	for i in "$1"
+	do
+		mv "$1" "$(echo $1 |iconv -t ISO-8859-1 |iconv -f GBK)"
+	done
+	shift
+done
+
