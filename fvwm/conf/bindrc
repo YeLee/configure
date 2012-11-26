@@ -19,6 +19,10 @@ Key 1 A CS MoveToPage 0 0
 Key 2 A CS MoveToPage 0 1
 Key 3 A CS MoveToPage 1 0
 Key 4 A CS MoveToPage 1 1
+Key h A CS ResizeMove  50 97  0  0
+Key j A CS ResizeMove 100 47  0 50
+Key k A CS ResizeMove 100 47  0  0
+Key l A CS ResizeMove  50 97 50  0
 
 #快捷键启动程序
 Key x A 4 Exec xterm
