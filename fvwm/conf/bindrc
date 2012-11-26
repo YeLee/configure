@@ -36,7 +36,7 @@ Key Down A 4 Exec audacious -s
 Key Left A 4 Exec audacious -r
 Key Right A 4 Exec audacious -f
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
-Key d A 4 Exec $[FVWM_USERDIR]/time.sh
+Key d A 4 All (CurrentPage) Iconify on
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 Functray
 Key F12 A N QuickTerminal

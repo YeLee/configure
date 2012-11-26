@@ -14,7 +14,7 @@ AddToFunc StartFunction
 + I Exec nm-applet
 + I Exec xfce4-clipman
 + I Exec fcitx-autostart
-+ I Exec conky
++ I Exec conky -c $[FVWM_USERDIR]/conkyrc
 
 #退出函数
 DestroyFunc ExitFunction
