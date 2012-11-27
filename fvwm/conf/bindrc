@@ -45,7 +45,9 @@ Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 Functray
 Key F12 A N QuickTerminal
 Key r A 4 Module FvwmForm FvwmRun
-Key Tab A M WindowList CurrentAtEnd
+Key Tab A M WindowList (CurrentPage) CurrentAtEnd
+Key Super_L A T WindowList SelectOnRelease Super_L
+Key Super_R A T WindowList SelectOnRelease Super_R
 
 Key XF86AudioMute A A Exec exec amixer set Master toggle
 Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-
