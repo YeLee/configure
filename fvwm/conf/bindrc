@@ -23,6 +23,11 @@ Key h A CS ResizeMove  50 97  0  0
 Key j A CS ResizeMove 100 47  0 50
 Key k A CS ResizeMove 100 47  0  0
 Key l A CS ResizeMove  50 97 50  0
+Key s A CS ResizeMove  50 47  0 50
+Key d A CS ResizeMove  50 47  0  0
+Key f A CS ResizeMove  50 47 50  0
+Key g A CS ResizeMove  50 47 50 50
+Key c A CS ResizeMove  50 47 25 25
 
 #快捷键启动程序
 Key x A 4 Exec xterm
