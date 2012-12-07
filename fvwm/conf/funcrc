@@ -24,11 +24,12 @@ AddtoFunc FuncOnTop
 DestroyFunc QuickTerminal
 AddToFunc QuickTerminal
 + I All (QuickTerminal, CurrentDesk) Iconify
++ I All (QuickTerminal, CurrentDesk, Visible) WarpToWindow 50 50
 + I TestRc (Match) break
 + I TestRc (NoMatch) Exec xterm +samename -title QuickTerminal -xrm QuickTerminal -name QuickTerminal
 + I wait QuickTerminal
-+ I All (QuickTerminal, CurrentDesk) Resize 750p 300p
-+ I All (QuickTerminal, CurrentDesk) Move 308p 0p
++ I All (QuickTerminal, CurrentDesk) ResizeMove 750p 300p 308p 0p
++ I All (QuickTerminal, CurrentDesk) WarpToWindow 50 50
 
 #网上找的托盘隐藏函数
 DestroyFunc Functray

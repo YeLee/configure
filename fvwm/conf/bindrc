@@ -50,6 +50,7 @@ Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 Functray
 Key F12 A N QuickTerminal
 Key r A 4 Module FvwmForm FvwmRun
+Key F1 A 4 Module FvwmConsole
 Key Tab A 4 WindowList CurrentAtEnd, SelectOnRelease Super_L
 Key Tab A M WindowList (CurrentPage) CurrentAtEnd
 

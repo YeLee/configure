@@ -21,7 +21,7 @@ MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, M
 Style * NoIcon
 Style * ResizeOpaque
 Style * ResizeHintOverride
-Style * BorderWidth 3, HandleWidth 3, DepressableBorder, DecorateTransient
+Style * BorderWidth 3, HandleWidth 3
 Style * Colorset 5, HilightColorset 6
 Style * ClickToFocus, MouseFocusClickRaises
 
