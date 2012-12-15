@@ -5,8 +5,9 @@ DesktopName 0 "桌面"
 EdgeScroll 0 0
 EwmhBaseStruts 0 0 0 0
 #一些默认的东西
-DefaultFont "$[Font]"
+DefaultFont "$[RegularFont]"
 DefaultColorset 6
+Style * Font "$[TitleFont]"
 #去掉讨厌的九宫格
 OpaqueMoveSize unlimited
 
@@ -72,9 +73,9 @@ DestroyModuleConfig FvwmRun: *
 *FvwmRun: Back Snow
 *FvwmRun: ItemFore Black
 *FvwmRun: ItemBack Snow
-*FvwmRun: Font "$[Font]"
-*FvwmRun: InputFont "$[Font]"
-*FvwmRun: ButtonFont "$[Font]"
+*FvwmRun: Font "$[RegularFont]"
+*FvwmRun: InputFont "$[RegularFont]"
+*FvwmRun: ButtonFont "$[RegularFont]"
 *FvwmRun: Title "运行命令"
 *FvwmRun: Text "运行："
 *FvwmRun: Input command 25 ""

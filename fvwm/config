@@ -3,7 +3,8 @@ SetEnv FVWM_CONF $[FVWM_USERDIR]/conf
 SetEnv FVWM_ICON $[FVWM_USERDIR]/icons
 SetEnv FVWM_CUR $[FVWM_USERDIR]/cursors
 SetEnv FVWM_DEC $[FVWM_USERDIR]/decoration
-SetEnv Font "StringEncoding=utf8:xft:WenQuanYi Micro Hei:size=9:encoding=iso10646-1"
+SetEnv RegularFont "StringEncoding=utf8:xft:WenQuanYi Zen Hei:size=10:encoding=iso10646-1"
+SetEnv TitleFont "StringEncoding=utf8:xft:WenQuanYi Micro Hei:size=8:encoding=iso10646-1"
 
 #配置文件
 Read $[FVWM_CONF]/stylerc
