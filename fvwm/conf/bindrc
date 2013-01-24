@@ -58,6 +58,10 @@ Key XF86AudioMute A A Exec exec amixer set Master toggle
 Key XF86AudioLowerVolume A A Exec exec amixer set Master 10%-
 Key XF86AudioRaiseVolume A A Exec exec amixer set Master 10%+
 
+Key 0 A 4 Exec exec amixer set Master toggle
+Key 8 A 4 Exec exec amixer set Master 10%-
+Key 9 A 4 Exec exec amixer set Master 10%+
+
 #鼠标按钮绑定
 Mouse 3 R A Menu FunMenu
 Mouse 1 R A Menu FunMenu
