@@ -1,12 +1,7 @@
-"1.0rc1
-
-loadplugins '\.(js|penta)$'
-group user
-
 set titlestring=YeLee
-set editor=Terminal\ -x\ vim
 set nextpattern=(下|后)一?(页|頁|章|篇|张),\bnext|more,^>$,^(>>|»)$,^(>|»),(>|»)$
 set previouspattern=(上|前)一?(页|頁|章|篇|张),\bprev|previous\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
 imap <C-n> <Esc>:tabnext<CR>
 imap <C-p> <Esc>:tabprev<CR>
 nmap eh H
@@ -19,4 +14,3 @@ nmap et T
 nmap eo O
 nmap ei g<C-g>
 
-" vim: set ft=pentadactyl:
