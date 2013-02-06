@@ -13,6 +13,4 @@ Read $[FVWM_CONF]/bindrc
 Read $[FVWM_CONF]/menurc
 Read $[FVWM_CONF]/cursorrc
 Read $[FVWM_CONF]/autostart
-#测试的配置文件
-Read $[FVWM_CONF]/temp
 

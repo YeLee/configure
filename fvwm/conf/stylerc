@@ -31,6 +31,7 @@ Style "Firefox" StartsOnPage 0 0
 Style "gimp" StartsOnPage 0 1
 Style "smplayer" StartsOnPage 0 1
 Style "xterm" StartsOnPage 1 0
+Style "gvim" StartsOnPage 1 0
 Style "Terminal" StartsOnPage 1 0
 Style "leafpad" StartsOnPage 1 0
 Style "Thunar" StartsOnPage 1 0

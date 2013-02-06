@@ -26,8 +26,6 @@ AddToMenu network
 + "%$[FVWM_ICON]/firefox.png%焰舞"   Exec exec firefox
 + "%$[FVWM_ICON]/claws-mail.png%魔爪"   Exec exec claws-mail
 + "%$[FVWM_ICON]/pidgin.png%知己"   Exec exec pidgin
-+ "%$[FVWM_ICON]/nm-connection-editor.png%连接"   Exec exec nm-connection-editor
-+ "%$[FVWM_ICON]/nm-applet.png%网络"   Exec exec nm-applet
 
 DestroyMenu system
 AddToMenu system
@@ -39,8 +37,8 @@ AddToMenu system
 DestroyMenu utility
 AddToMenu utility
 + "%$[FVWM_ICON]/leafpad.png%叶笺"   Exec exec leafpad
++ "%$[FVWM_ICON]/gvim.png%十指"   Exec exec gvim
 + "%$[FVWM_ICON]/Thunar.png%宝库"   Exec exec thunar
-+ "%$[FVWM_ICON]/file-roller.png%归档"   Exec exec file-roller
 + "%$[FVWM_ICON]/gucharmap.png%字符"   Exec exec gucharmap
 
 DestroyMenu FVWM

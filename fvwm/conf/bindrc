@@ -39,7 +39,7 @@ Key s A 4 Exec smplayer
 Key m A 4 Exec claws-mail
 Key c A 4 Exec gucharmap
 Key b A 4 Exec VirtualBox
-Key v A 4 Exec xterm -e vim
+Key v A 4 Exec gvim
 Key Up A 4 Exec audacious -p
 Key Down A 4 Exec audacious -s
 Key Left A 4 Exec audacious -r

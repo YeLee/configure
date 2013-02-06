@@ -13,7 +13,6 @@ AddToFunc StartFunction
 + I Exec /usr/libexec/polkit-gnome-authentication-agent-1
 + I Exec start-pulseaudio-x11
 + I Exec nm-applet
-+ I Exec xfce4-clipman
 + I Exec fcitx-autostart
 + I Exec conky -c $[FVWM_USERDIR]/conkyrc
 
@@ -22,7 +21,6 @@ DestroyFunc ExitFunction
 AddToFunc ExitFunction
 + I Exec killall conky
 + I Exec killall fcitx
-+ I Exec killall xfce4-clipman
 + I Exec killall nm-applet
 + I Exec killall pulseaudio
 + I Exec killall polkit-gnome-authentication-agent-1
