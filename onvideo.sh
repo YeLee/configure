@@ -12,5 +12,7 @@ fi
 USERAGENT="Mozilla/5.0"
 szparser="http://www.flvcd.com/parse.php?kw=$szurl&format=$szdefinition"
 echo $szparser
-wget -q --user-agent="$USERAGENT" "$szparser" -O - |grep "<U>" \
-|sed 's/<U>//g' |mplayer -user-agent "$USERAGENT" -playlist -
+
+wget -q --user-agent="$USERAGENT" "$szparser" -O - |\
+egrep -i "<br>|d_clip_button" |grep -o '\"http[^"]*\"' |tr -d '"' |\
+mplayer2 -user-agent "$USERAGENT" -playlist -
