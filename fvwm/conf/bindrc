@@ -48,7 +48,7 @@ Key f A 4 Exec ~/.mozilla/firefox-shm.sh
 Key d A 4 All (CurrentPage) Iconify on
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 Functray
-Key F12 A N QuickTerminal
+Key F13 A N QuickTerminal
 Key r A 4 Module FvwmForm FvwmRun
 Key F1 A 4 Module FvwmConsole
 Key Tab A 4 WindowList CurrentAtEnd, SelectOnRelease Super_L
@@ -65,6 +65,7 @@ Key 9 A 4 Exec exec amixer set Master 10%+
 #鼠标按钮绑定
 Mouse 3 R A Menu FunMenu
 Mouse 1 R A Menu FunMenu
+Mouse 3 T A Menu WinMenu
 
 Mouse 1 1 A FuncOnTop
 Mouse 1 2 A Close

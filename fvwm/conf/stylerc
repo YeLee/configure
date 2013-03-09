@@ -2,6 +2,7 @@
 DesktopSize 2x2
 DesktopName 0 "桌面"
 #鼠标事件
+EdgeThickness 1
 EdgeScroll 0 0
 EwmhBaseStruts 0 0 0 0
 #一些默认的东西
@@ -22,9 +23,11 @@ MenuStyle * BorderWidth 0, Hilight3DThickness 1, ActiveFore red, Animation on, M
 Style * NoIcon
 Style * ResizeOpaque
 Style * ResizeHintOverride
+Style * EdgeMoveDelay 100
+Style * EdgeMoveResistance 100
 Style * BorderWidth 3, HandleWidth 3
 Style * Colorset 5, HilightColorset 6
-Style * ClickToFocus, MouseFocusClickRaises
+Style * ClickToFocus, ClickToFocusRaises
 
 #指定窗口样式
 Style "Firefox" StartsOnPage 0 0
