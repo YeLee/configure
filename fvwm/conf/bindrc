@@ -1,5 +1,6 @@
-#Alt+F1弹出菜单
+#Alt+F1弹出功能菜单 Alt+F2弹出窗口菜单
 Key F1 A M Menu FunMenu
+Key F2 A M Menu WinMenu
 
 #一些窗口操作的热键
 Key F5 A 4 Close

@@ -1,0 +1,21 @@
+!映射几个按键
+remove lock = Caps_Lock
+keycode 66 = Escape
+add lock = Caps_Lock
+remove mod2 = Num_Lock
+keycode 77 = ISO_Next_Group
+add mod2 = Num_Lock
+
+keycode 78 = F13
+keycode 87 = KP_End KP_1 KP_1 KP_End
+keycode 88 = KP_Down KP_2 KP_2 KP_Down
+keycode 89 = KP_Next KP_3 KP_3 KP_Next
+keycode 83 = KP_Left KP_4 KP_4 KP_Left
+keycode 84 = KP_Begin KP_5 KP_5 KP_Begin
+keycode 85 = KP_Right KP_6 KP_6 KP_Right
+keycode 79 = KP_Home KP_7 KP_7 KP_Home
+keycode 80 = KP_Up KP_8 KP_8 KP_Up
+keycode 81 = KP_Prior KP_9 KP_9 KP_Prior
+keycode 90 = KP_Insert KP_0 KP_0 KP_Insert
+keycode 91 = KP_Delete KP_Decimal KP_Decimal KP_Delete
+
