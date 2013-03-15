@@ -1,0 +1,71 @@
+#!/bin/bash
+tempfile=$(mktemp)
+icount=0
+
+signal_handle()
+{
+	rm $tempfile
+	exit 1
+}
+trap signal_handle SIGHUP SIGINT SIGQUIT SIGABRT SIGKILL SIGALRM SIGTERM
+
+dlrss()
+{
+	wget -q --user-agent="Mozilla/5.0" \
+		"http://www.linuxeden.com/rss.php" -O - |iconv -f cp936 \
+		|grep -A1 "<title><\!\[CDATA\[" |grep -v "^--" \
+		|sed -e 's/\s\+<title><!\[CDATA\[\(.*\)\]\]><\/title>/\1/g'\
+		 -e 's/\s\+<link>\([^<]*\)<\/link>/\1/g' >$tempfile
+	icount=$(wc -l $tempfile |grep -o "^[0-9]*")
+	let icount/=2
+	return 0
+}
+
+showfile()
+{
+	echo -ne "\ec"
+	i=1
+	while read line
+	do
+		let i+=1
+		[ $(expr $i % 2) -eq 0 ] &&\
+			echo -ne "\e[1;31m[$(expr $i / 2)]\e[1;0m\t" && \
+			echo $line
+	done < $tempfile
+	return 0
+}
+
+error_input()
+{
+	sleep 1
+	#echo -ne "\e[1;34mPress any key to continue ...\e[1;0m"
+	#read -s -n1
+	showfile
+	return 0
+}
+
+dlrss
+showfile
+
+until [ "$cinput" = "q" ]
+do
+	echo -ne "\e[1;34mPlease enter [1-$icount|r|q]:\e[1;0m"
+	read cinput
+
+	[ -z "$cinput" ] && echo "Empty string." && error_input && \
+		continue
+
+	[ "$cinput" = "r" ] && dlrss && showfile && \
+		continue
+
+	[[ "$cinput" =~ ^[0-9]{1,}$ ]] && [ $cinput -ge 1 ] && \
+		[ $cinput -le $icount ] && let "cinput*=2" && \
+		xdg-open $(sed -ne ${cinput}'p' $tempfile) && showfile && \
+		continue
+
+	[ "$cinput" != "q" ] && echo "Illegal input." && error_input && \
+		continue
+
+done
+
+rm $tempfile
