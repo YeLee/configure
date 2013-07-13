@@ -37,14 +37,19 @@ Key e A 4 Exec Thunar
 Key l A 4 Exec leafpad
 Key g A 4 Exec gimp
 Key s A 4 Exec smplayer
+Key o A 4 Exec xfce4-mixer
+Key p A 4 Exec pavucontrol
 Key m A 4 Exec claws-mail
 Key c A 4 Exec gucharmap
 Key b A 4 Exec VirtualBox
 Key v A 4 Exec gvim
-Key Up A 4 Exec audacious -p
-Key Down A 4 Exec audacious -s
-Key Left A 4 Exec audacious -r
-Key Right A 4 Exec audacious -f
+Key a A 4 Exec audacious
+Key Up A 4 Exec audtool playback-play
+Key Down A 4 Exec audtool playback-stop
+Key Left A 4 Exec audtool playlist-advance
+Key Right A 4 Exec audtool playlist-reverse
+Key Insert A 4 Exec audtool mainwin-show on
+Key Delete A 4 Exec audtool shutdown
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
 Key d A 4 All (CurrentPage) Iconify on
 Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh

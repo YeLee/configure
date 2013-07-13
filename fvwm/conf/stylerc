@@ -31,8 +31,11 @@ Style * ClickToFocus, ClickToFocusRaises
 
 #指定窗口样式
 Style "Firefox" StartsOnPage 0 0
+Style "claws-mail" StartsOnPage 0 0
 Style "gimp" StartsOnPage 0 1
 Style "smplayer" StartsOnPage 0 1
+Style "xfce4-mixer" StartsOnPage 0 1
+Style "pavucontrol" StartsOnPage 0 1
 Style "xterm" StartsOnPage 1 0
 Style "gvim" StartsOnPage 1 0
 Style "Terminal" StartsOnPage 1 0
