@@ -34,6 +34,7 @@ Style "Firefox" StartsOnPage 0 0
 Style "claws-mail" StartsOnPage 0 0
 Style "gimp" StartsOnPage 0 1
 Style "smplayer" StartsOnPage 0 1
+Style "MPlayer" StartsOnPage 0 1
 Style "xfce4-mixer" StartsOnPage 0 1
 Style "pavucontrol" StartsOnPage 0 1
 Style "xterm" StartsOnPage 1 0
