@@ -1,0 +1,16 @@
+# patch for luna_pinyin.schema.yaml
+# encoding: utf-8
+
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: ["中文", "西文"]
+    - name: full_shape
+      reset: 1
+      states: ["半角", "全角"]
+    - name: simplification
+      states: ["漢字", "汉字"]
+  use_preset_vocabulary: true
+  punctuator:
+    import_preset: punctuator
