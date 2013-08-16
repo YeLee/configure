@@ -1,9 +1,17 @@
-set titlestring=YeLee
-set nextpattern=(下|后)一?(页|頁|章|篇|张),\bnext|more,^>$,^(>>|»)$,^(>|»),(>|»)$
-set previouspattern=(上|前)一?(页|頁|章|篇|张),\bprev|previous\b,^<$,^(<<|«)$,^(<|«),(<|«)$
-set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
-imap <C-n> <Esc>:tabnext<CR>
-imap <C-p> <Esc>:tabprev<CR>
+
+highlight CmdLine background: #E6E5E4; color: #FF0000; font-weight: bold;
+highlight CmdLine>* font-size: 10pt;
+
+highlight CompDesc color: #000000;
+highlight CompItem color: #000000;
+highlight CompItem[selected] color: #000000; background: #E6E5E4; font-weight: bold; font-size: 11pt;
+
+highlight Hint font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #9900FF; border-color: #FF00FF;
+highlight HintActive background-color: #FF0000; color: #FFFF00; font-weight: bold; font-size: 12pt;
+highlight HintElem background-color: #e6e5e4;  color: black;
+
+imap <C-n> <Esc>:tabnext<Return>
+imap <C-p> <Esc>:tabprev<Return>
 nmap eh H
 nmap el L
 nmap ej <C-p>
@@ -13,4 +21,10 @@ nmap ef F
 nmap et T
 nmap eo O
 nmap ei g<C-g>
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
+set complete=sSl
+set nextpattern=(下|后)一?(页|頁|章|篇|张),bnext|more,^>$,^(>>|»)$,^(>|»),(>|»)$
+set previouspattern=(上|前)一?(页|頁|章|篇|张),bprev|previousb,^<$,^(<<|«)$,^(<|«),(<|«)$
+set titlestring=YeLee
 
+" vim: set ft=vimperator:
