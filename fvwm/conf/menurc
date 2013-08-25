@@ -1,55 +1,55 @@
 #自定义菜单
 DestroyMenu recreate FunMenu
-AddToMenu FunMenu "%$[FVWM_ICON]/FunMenu.png%应用程序"   Title Top
-+ "%$[FVWM_ICON]/Network.png%网络"   Popup network
-+ "%$[FVWM_ICON]/Graphics.png%图像"   Popup graphics
-+ "%$[FVWM_ICON]/Media.png%媒体"   Popup media
-+ "%$[FVWM_ICON]/System.png%系统"   Popup system
-+ "%$[FVWM_ICON]/Utility.png%附件"   Popup utility
-+ "%$[FVWM_ICON]/fvwm.png%FVWM菜单"   Popup FVWM
+AddToMenu FunMenu "%FunMenu.png%应用程序"   Title Top
++ "%Network.png%网络"   Popup network
++ "%Graphics.png%图像"   Popup graphics
++ "%Media.png%媒体"   Popup media
++ "%System.png%系统"   Popup system
++ "%Utility.png%附件"   Popup utility
++ "%fvwm.png%FVWM菜单"   Popup FVWM
 
 DestroyMenu graphics
 AddToMenu graphics
-+ "%$[FVWM_ICON]/gimp.png%修边"   Exec exec gimp-2.6
-+ "%$[FVWM_ICON]/mirage.png%蜃景"   Exec exec mirage
-+ "%$[FVWM_ICON]/screenshot.png%截图" Exec exec $[FVWM_USERDIR]/screenshot.sh
++ "%gimp.png%修边"   Exec exec gimp-2.6
++ "%mirage.png%蜃景"   Exec exec mirage
++ "%screenshot.png%截图" Exec exec $[FVWM_USERDIR]/screenshot.sh
 
 DestroyMenu media
 AddToMenu media
-+ "%$[FVWM_ICON]/audacious.png%胆量"   Exec exec audacious
-+ "%$[FVWM_ICON]/smplayer.png%舞台"   Exec exec smplayer
-+ "%$[FVWM_ICON]/multimedia-volume-control.png%音控"   Exec exec pavucontrol
-+ "%$[FVWM_ICON]/multimedia-volume-control.png%混音"   Exec exec xfce4-mixer
++ "%audacious.png%胆量"   Exec exec audacious
++ "%smplayer.png%舞台"   Exec exec smplayer
++ "%multimedia-volume-control.png%音控"   Exec exec pavucontrol
++ "%multimedia-volume-control.png%混音"   Exec exec xfce4-mixer
 
 DestroyMenu network
 AddToMenu network
-+ "%$[FVWM_ICON]/firefox.png%焰舞"   Exec exec firefox
-+ "%$[FVWM_ICON]/claws-mail.png%魔爪"   Exec exec claws-mail
-+ "%$[FVWM_ICON]/pidgin.png%知己"   Exec exec pidgin
++ "%firefox.png%焰舞"   Exec exec firefox
++ "%claws-mail.png%魔爪"   Exec exec claws-mail
++ "%pidgin.png%知己"   Exec exec pidgin
 
 DestroyMenu system
 AddToMenu system
-+ "%$[FVWM_ICON]/xterm.png%魔法" Exec exec xterm
-+ "%$[FVWM_ICON]/terminal.png%终端"   Exec exec Terminal
-+ "%$[FVWM_ICON]/taskmanager.png%杀手"   Exec exec xfce4-taskmanager
-+ "%$[FVWM_ICON]/virtualbox.png%魔盒"   Exec exec VirtualBox
++ "%xterm.png%魔法" Exec exec xterm
++ "%terminal.png%终端"   Exec exec Terminal
++ "%taskmanager.png%杀手"   Exec exec xfce4-taskmanager
++ "%virtualbox.png%魔盒"   Exec exec VirtualBox
 
 DestroyMenu utility
 AddToMenu utility
-+ "%$[FVWM_ICON]/leafpad.png%叶笺"   Exec exec leafpad
-+ "%$[FVWM_ICON]/gvim.png%十指"   Exec exec gvim
-+ "%$[FVWM_ICON]/Thunar.png%宝库"   Exec exec thunar
-+ "%$[FVWM_ICON]/gucharmap.png%字符"   Exec exec gucharmap
++ "%leafpad.png%叶笺"   Exec exec leafpad
++ "%gvim.png%十指"   Exec exec gvim
++ "%Thunar.png%宝库"   Exec exec thunar
++ "%gucharmap.png%字符"   Exec exec gucharmap
 
 DestroyMenu FVWM
 AddToMenu FVWM
-+ "%$[FVWM_ICON]/restart.png%重启FVWM" Restart
-+ "%$[FVWM_ICON]/quit.png%退出FVWM" Quit
++ "%restart.png%重启FVWM" Restart
++ "%quit.png%退出FVWM" Quit
 + "" Nop
-+ "%$[FVWM_ICON]/hibernate.png%休眠电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
-+ "%$[FVWM_ICON]/suspend.png%挂起电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
-+ "%$[FVWM_ICON]/reboot.png%重启电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
-+ "%$[FVWM_ICON]/shutdown.png%关闭电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
++ "%hibernate.png%休眠电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
++ "%suspend.png%挂起电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
++ "%reboot.png%重启电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
++ "%shutdown.png%关闭电脑" Exec exec dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
 
 #窗口菜单
 DestroyMenu	WinMenu

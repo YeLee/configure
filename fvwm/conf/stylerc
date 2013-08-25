@@ -49,21 +49,21 @@ Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth
 Style "VirtualBox" WindowListSkip, StaysOnBottom
 
 #边框和按钮样式
-ButtonStyle 1 Activeup (Pixmap $[FVWM_DEC]/top-active.png)
-ButtonStyle 1 ActiveDown (Pixmap $[FVWM_DEC]/top-pressed.png)
-ButtonStyle 1 Inactive (Pixmap $[FVWM_DEC]/top-inactive.png)
-ButtonStyle 2 Activeup (Pixmap $[FVWM_DEC]/close-active.png)
-ButtonStyle 2 ActiveDown (Pixmap $[FVWM_DEC]/close-pressed.png)
-ButtonStyle 2 Inactive (Pixmap $[FVWM_DEC]/close-inactive.png)
-ButtonStyle 3 Activeup (Pixmap $[FVWM_DEC]/full-active.png)
-ButtonStyle 3 ActiveDown (Pixmap $[FVWM_DEC]/full-pressed.png)
-ButtonStyle 3 Inactive (Pixmap $[FVWM_DEC]/full-inactive.png)
-ButtonStyle 4 Activeup (Pixmap $[FVWM_DEC]/maximize-active.png)
-ButtonStyle 4 ActiveDown (Pixmap $[FVWM_DEC]/maximize-pressed.png)
-ButtonStyle 4 Inactive (Pixmap $[FVWM_DEC]/maximize-inactive.png)
-ButtonStyle 6 Activeup (Pixmap $[FVWM_DEC]/hide-active.png)
-ButtonStyle 6 ActiveDown (Pixmap $[FVWM_DEC]/hide-pressed.png)
-ButtonStyle 6 Inactive (Pixmap $[FVWM_DEC]/hide-inactive.png)
+ButtonStyle 1 Activeup (Pixmap dec-top-active.png)
+ButtonStyle 1 ActiveDown (Pixmap dec-top-pressed.png)
+ButtonStyle 1 Inactive (Pixmap dec-top-inactive.png)
+ButtonStyle 2 Activeup (Pixmap dec-close-active.png)
+ButtonStyle 2 ActiveDown (Pixmap dec-close-pressed.png)
+ButtonStyle 2 Inactive (Pixmap dec-close-inactive.png)
+ButtonStyle 3 Activeup (Pixmap dec-full-active.png)
+ButtonStyle 3 ActiveDown (Pixmap dec-full-pressed.png)
+ButtonStyle 3 Inactive (Pixmap dec-full-inactive.png)
+ButtonStyle 4 Activeup (Pixmap dec-maximize-active.png)
+ButtonStyle 4 ActiveDown (Pixmap dec-maximize-pressed.png)
+ButtonStyle 4 Inactive (Pixmap dec-maximize-inactive.png)
+ButtonStyle 6 Activeup (Pixmap dec-hide-active.png)
+ButtonStyle 6 ActiveDown (Pixmap dec-hide-pressed.png)
+ButtonStyle 6 Inactive (Pixmap dec-hide-inactive.png)
 
 TitleStyle -- Flat
 BorderStyle -- Flat

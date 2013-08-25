@@ -22,7 +22,7 @@ nmap et T
 nmap eo O
 nmap ei g<C-g>
 set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
-set complete=sSl
+set complete=lsS
 set nextpattern=(下|后)一?(页|頁|章|篇|张),bnext|more,^>$,^(>>|»)$,^(>|»),(>|»)$
 set previouspattern=(上|前)一?(页|頁|章|篇|张),bprev|previousb,^<$,^(<<|«)$,^(<|«),(<|«)$
 set titlestring=YeLee

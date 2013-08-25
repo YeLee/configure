@@ -46,8 +46,8 @@ Key v A 4 Exec gvim
 Key a A 4 Exec audacious
 Key Up A 4 Exec audtool playback-play
 Key Down A 4 Exec audtool playback-stop
-Key Left A 4 Exec audtool playlist-advance
-Key Right A 4 Exec audtool playlist-reverse
+Key Left A 4 Exec audtool playlist-reverse
+Key Right A 4 Exec audtool playlist-advance
 Key Insert A 4 Exec audtool mainwin-show on
 Key Delete A 4 Exec audtool shutdown
 Key f A 4 Exec ~/.mozilla/firefox-shm.sh
