@@ -1,0 +1,24 @@
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter:lcddefault
+Xft.rgba: rgb
+Xft.antialias: 1
+Xcursor.theme: oxy-white
+Xcursor.size: 16
+
+XTer*termName: xterm-256color
+XTerm*locale: true
+XTerm*utf8: true
+!XTerm*cjkWidth: true
+XTerm*utf8Title: true
+XTerm*inputMethod: fcitx
+XTerm*SaveLines: 10240
+XTerm*geometry: 80x25+500+250
+XTerm*jumpScroll: true
+XTerm*multiScroll: true
+XTerm*background: #E6E5E4
+XTerm*foreground: #000000
+
+XTerm*faceName: WenQuanYi Zen Hei Mono-9:charwidth=7:antialias=True
+XTerm*faceNameDoublesize: WenQuanYi Zen Hei Mono-9:charwidth=7:antialias=True

@@ -31,28 +31,28 @@ Key g A CS ResizeMove  50 47 50 50
 Key c A CS ResizeMove  50 47 25 25
 
 #快捷键启动程序
-Key x A 4 Exec xterm
-Key t A 4 Exec Terminal
-Key e A 4 Exec Thunar
-Key l A 4 Exec leafpad
-Key g A 4 Exec gimp
-Key s A 4 Exec smplayer
-Key o A 4 Exec xfce4-mixer
-Key p A 4 Exec pavucontrol
-Key m A 4 Exec claws-mail
-Key c A 4 Exec gucharmap
-Key b A 4 Exec VirtualBox
-Key v A 4 Exec gvim
-Key a A 4 Exec audacious
-Key Up A 4 Exec audtool playback-play
-Key Down A 4 Exec audtool playback-stop
-Key Left A 4 Exec audtool playlist-reverse
-Key Right A 4 Exec audtool playlist-advance
-Key Insert A 4 Exec audtool mainwin-show on
-Key Delete A 4 Exec audtool shutdown
-Key f A 4 Exec ~/.mozilla/firefox-shm.sh
+Key x A 4 Exec exec xterm
+Key t A 4 Exec exec Terminal
+Key e A 4 Exec exec Thunar
+Key l A 4 Exec exec leafpad
+Key g A 4 Exec exec gimp
+Key s A 4 Exec exec smplayer
+Key o A 4 Exec exec xfce4-mixer
+Key p A 4 Exec exec pavucontrol
+Key m A 4 Exec exec claws-mail
+Key c A 4 Exec exec gucharmap
+Key b A 4 Exec exec VirtualBox
+Key v A 4 Exec exec gvim
+Key a A 4 Exec exec audacious
+Key Up A 4 Exec exec audtool playback-play
+Key Down A 4 Exec exec audtool playback-stop
+Key Left A 4 Exec exec audtool playlist-reverse
+Key Right A 4 Exec exec audtool playlist-advance
+Key Insert A 4 Exec exec audtool mainwin-show on
+Key Delete A 4 Exec exec audtool shutdown
+Key f A 4 Exec exec ~/.mozilla/firefox-shm.sh
 Key d A 4 All (CurrentPage) Iconify on
-Key Print A A Exec $[FVWM_USERDIR]/screenshot.sh
+Key Print A A Exec exec $[FVWM_USERDIR]/screenshot.sh
 Key h A 4 Functray
 Key F13 A N QuickTerminal
 Key r A 4 Module FvwmForm FvwmRun
