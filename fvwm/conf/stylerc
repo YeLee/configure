@@ -28,6 +28,7 @@ Style * EdgeMoveResistance 100
 Style * BorderWidth 3, HandleWidth 3
 Style * Colorset 5, HilightColorset 6
 Style * ClickToFocus, ClickToFocusRaises
+Style * KeepWindowGroupsOnDesk, CaptureIgnoresStartsOnPage
 
 #指定窗口样式
 Style "Firefox" StartsOnPage 0 0

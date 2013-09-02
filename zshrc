@@ -66,4 +66,10 @@ alias ll='ls -l'
 alias lc="LC_ALL=C"
 alias launchx="startx 1>$xsessionlog 2>$xsessionlog"
 
+#some func
+command_not_found_handler() {
+	wget -q "http://www.portagefilelist.de/index.php/Special:PFLQuery2?file=${1}&searchfile=lookup&lookup=file&txt" -O - |awk -v cmd="$1" 'BEGIN{printf "\033[4;32m%s\033[0m may be included in the following packages: \n", cmd} {if ((NR != 1) && (!rec[$1$2]++)) {i++;printf "\033[33m%02d\033[0m:\033[1;31m%s\033[0m/\033[1;35m%s\033[0m\n", i, $1, $2}} END{if (i == 0) printf "\033[1;4;31mNo matches for %s !\033[0m\n", cmd}'
+	return 127
+}
+
 # End of lines configured by user

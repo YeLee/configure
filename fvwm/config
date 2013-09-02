@@ -14,3 +14,6 @@ Read $[FVWM_CONF]/menurc
 Read $[FVWM_CONF]/cursorrc
 Read $[FVWM_CONF]/autostart
 
+UnSetEnv FVWM_CONF
+UnSetEnv RegularFont
+UnsetEnv TitleFont
