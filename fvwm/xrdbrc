@@ -15,6 +15,10 @@ XTerm*utf8Title: true
 XTerm*inputMethod: fcitx
 XTerm*SaveLines: 10240
 XTerm*geometry: 80x25+500+250
+XTerm*metaSendsEscape: true
+XTerm*visualBell: true
+XTerm*visualBellDelay: 300
+XTerm*visualBellLine: false
 XTerm*jumpScroll: true
 XTerm*multiScroll: true
 XTerm*background: #E6E5E4

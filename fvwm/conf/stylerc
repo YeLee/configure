@@ -48,6 +48,9 @@ Style "xterm" StaysOnTop, BorderWidth 0,HandleWidth 0, !Title
 Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
 Style "VirtualBox" WindowListSkip, StaysOnBottom
+Style "wps" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
+Style "wpp" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
+Style "et" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
 
 #边框和按钮样式
 ButtonStyle 1 Activeup (Pixmap dec-top-active.png)
