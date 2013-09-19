@@ -12,3 +12,11 @@ patch:
       - xform/([nl])v/$1ü/
       - xform/([nl])ue/$1üe/
       - xform/([jqxy])v/$1u/
+  reverse_lookup:
+    dictionary: stroke
+    enable_completion: true
+    prefix: "`"
+    suffix: "'"
+    tips: "〔筆畫〕"
+    preedit_format: 
+      - "xlit/hspnzd/橫豎撇捺折點/"

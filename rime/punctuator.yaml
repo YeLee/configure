@@ -35,6 +35,37 @@ punctuator:
     "|": {pair: ["〖", "〗"]}
     "}": {pair: ["﹃", "﹄"]}
     "~": {commit: "～"}
+  half_shape:
+    "!": {commit: "!"}
+    "\"": {commit: "\""}
+    "#": {commit: "#"}
+    "$": {commit: "$"}
+    "%": {commit: "%"}
+    "&": {commit: "&"}
+    "'": {commit: "'"}
+    "(": {commit: "("}
+    ")": {commit: ")"}
+    "*": {commit: "*"}
+    ",": {commit: ","}
+    "-": {commit: "-"}
+    ".": {commit: "."}
+    "/": {commit: "/"}
+    ":": {commit: ":"}
+    ";": {commit: ";"}
+    "<": {commit: "<"}
+    "=": {commit: "="}
+    ">": {commit: ">"}
+    "?": {commit: "?"}
+    "@": {commit: "@"}
+    "[": {commit: "["}
+    "\\": {commit: "\\"}
+    "]": {commit: "]"}
+    "^": {commit: "^"}
+    "_": {commit: "_"}
+    "{": {commit: "{"}
+    "|": {commit: "|"}
+    "}": {commit: "}"}
+    "~": {commit: "~"}
   symbols:
     "``a": [ "ㄚ", "ɑ̄", "ɑ́", "ɑ̌", "ɑ̀", "ɑ", "ā", "á", "ǎ", "à" ]
     "``o": [ "ㄛ", "ō", "ó", "ǒ", "ò" ]

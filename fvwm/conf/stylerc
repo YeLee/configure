@@ -29,6 +29,9 @@ Style * BorderWidth 3, HandleWidth 3
 Style * Colorset 5, HilightColorset 6
 Style * ClickToFocus, ClickToFocusRaises
 Style * KeepWindowGroupsOnDesk, CaptureIgnoresStartsOnPage
+Style * MWMDecor, MWMFunctions, HintOverride, NoPPosition
+Style * UseDecor WinDec
+Style * MiniIcon Unknown.png
 
 #指定窗口样式
 Style "Firefox" StartsOnPage 0 0
@@ -48,31 +51,33 @@ Style "xterm" StaysOnTop, BorderWidth 0,HandleWidth 0, !Title
 Style "trayer" Sticky, FixedSize, FixedPosition, WindowListSkip, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
 Style "QuickTerminal" Sticky, WindowListSkip, FPGrabFocus, layer 99, BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders, !Closable, !Maximizable
 Style "VirtualBox" WindowListSkip, StaysOnBottom
-Style "wps" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
-Style "wpp" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
-Style "et" BorderWidth 0, HandleWidth 0, !Title, !Handles, !Borders
 
 #边框和按钮样式
-ButtonStyle 1 Activeup (Pixmap dec-top-active.png)
-ButtonStyle 1 ActiveDown (Pixmap dec-top-pressed.png)
-ButtonStyle 1 Inactive (Pixmap dec-top-inactive.png)
-ButtonStyle 2 Activeup (Pixmap dec-close-active.png)
-ButtonStyle 2 ActiveDown (Pixmap dec-close-pressed.png)
-ButtonStyle 2 Inactive (Pixmap dec-close-inactive.png)
-ButtonStyle 3 Activeup (Pixmap dec-full-active.png)
-ButtonStyle 3 ActiveDown (Pixmap dec-full-pressed.png)
-ButtonStyle 3 Inactive (Pixmap dec-full-inactive.png)
-ButtonStyle 4 Activeup (Pixmap dec-maximize-active.png)
-ButtonStyle 4 ActiveDown (Pixmap dec-maximize-pressed.png)
-ButtonStyle 4 Inactive (Pixmap dec-maximize-inactive.png)
-ButtonStyle 6 Activeup (Pixmap dec-hide-active.png)
-ButtonStyle 6 ActiveDown (Pixmap dec-hide-pressed.png)
-ButtonStyle 6 Inactive (Pixmap dec-hide-inactive.png)
-
-TitleStyle -- Flat
-BorderStyle -- Flat
-ButtonStyle All -- flat
-ButtonStyle All -- UseTitleStyle
+DestroyDecor WinDec
+AddToDecor WinDec
++ AddTitleStyle Active (-- Flat)
++ AddTitleStyle InActive (-- Flat)
++ AddButtonStyle All Active (-- Flat)
++ AddButtonStyle All InActive (-- Flat)
++ AddButtonStyle 1 Active (MiniIcon -- Flat)
++ AddButtonStyle 1 InActive (MiniIcon -- Flat)
++ AddButtonStyle 2 ActiveUp (Pixmap dec-close-active.png -- Flat)
++ AddButtonStyle 2 ActiveDown (Pixmap dec-close-pressed.png -- Flat)
++ AddButtonStyle 2 InActive (Pixmap dec-close-inactive.png -- Flat)
++ AddButtonStyle 3 ActiveUp (Pixmap dec-top-active.png -- Flat)
++ AddButtonStyle 3 ActiveDown (Pixmap dec-top-pressed.png -- Flat)
++ AddButtonStyle 3 InActive (Pixmap dec-top-inactive.png -- Flat)
++ AddButtonStyle 4 ActiveUp (Pixmap dec-maximize-active.png -- Flat)
++ AddButtonStyle 4 ActiveDown (Pixmap dec-maximize-pressed.png -- Flat)
++ AddButtonStyle 4 InActive (Pixmap dec-maximize-inactive.png -- Flat)
++ AddButtonStyle 5 ActiveUp (Pixmap dec-full-active.png -- Flat)
++ AddButtonStyle 5 ActiveDown (Pixmap dec-full-pressed.png -- Flat)
++ AddButtonStyle 5 InActive (Pixmap dec-full-inactive.png -- Flat)
++ AddButtonStyle 6 ActiveUp (Pixmap dec-hide-active.png -- Flat)
++ AddButtonStyle 6 ActiveDown (Pixmap dec-hide-pressed.png -- Flat)
++ AddButtonStyle 6 InActive (Pixmap dec-hide-inactive.png -- Flat)
++ BorderStyle Active -- HiddenHandles NoInset Flat
++ BorderStyle InActive -- HiddenHandles NoInset Flat
 
 #动画
 *FvwmAnimate: Delay 25
