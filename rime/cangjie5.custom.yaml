@@ -2,13 +2,14 @@
 # encoding: utf-8
 
 patch:
-  punctuator:
-    import_preset: punctuator
-
-  abc_segmentor:
-    extra_tags: {}
+  schema/dependencies:
+    - luna_pinyin
+  punctuator/import_preset: punctuator
+  abc_segmentor/extra_tags: {}
 
   translator:
+    enable_user_dict: true
+    enable_sentence: false
     dictionary: cangjie5
     enable_charset_filter: true
     preedit_format:

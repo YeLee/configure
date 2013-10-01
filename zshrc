@@ -5,7 +5,7 @@
 autoload -Uz compinit
 compinit -d ~/.cache/zsh/zcompdump
 HISTFILE=~/.cache/zsh/zshistory
-HISTSIZE=1000
+HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 
 PROMPT2='_%F{red}%B>>>%b%f'
