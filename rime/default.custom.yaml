@@ -8,11 +8,11 @@ patch:
   ascii_composer:
     good_old_caps_lock: true
     switch_key:
-      Caps_Lock: commit_code
+      Caps_Lock: noop
       Shift_L: noop
       Shift_R: noop
       Control_L: commit_code
-      Control_R: noop
+      Control_R: commit_code
   recognizer/punctuator/import_preset: punctuator
   recognizer/patterns/punct: "``[a-z]{1,2}$" 
   key_binder/bindings:
@@ -29,4 +29,3 @@ patch:
     - {accept: "Control+3", toggle: full_shape, when: always}
     - {accept: "Control+4", toggle: simplification, when: always}
     - {accept: "Control+5", toggle: extended_charset, when: always}
-    - {accept: "Control_R", toggle: full_shape, when: always}
