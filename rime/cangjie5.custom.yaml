@@ -6,29 +6,6 @@ patch:
     - luna_pinyin
   punctuator/import_preset: punctuator
   abc_segmentor/extra_tags: {}
-
-  translator:
-    enable_user_dict: true
-    enable_sentence: false
-    dictionary: cangjie5
-    enable_charset_filter: true
-    preedit_format:
-      - xform/^([a-z]*)$/$1｜\U$1\E/
-      - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
-    comment_format:
-      - "xlit|abcdefghijklmnopqrstuvwxyz~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符～|"
-    disable_user_dict_for_patterns:
-      - "^z.*$"
-      - "^yyy.*$"
-
-  reverse_lookup:
-    dictionary: luna_pinyin
-    prefix: "`"
-    suffix: "'"
-    tips: 〔拼音〕
-    preedit_format:
-      - xform/([nl])v/$1ü/
-      - xform/([nl])ue/$1üe/
-      - xform/([jqxy])v/$1u/
-    comment_format:
-      - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
+  translator/dictionary: cangjie5_custom
+  translator/enable_user_dict: true
+  translator/enable_sentence: false
