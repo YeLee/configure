@@ -13,5 +13,20 @@ patch:
       Shift_R: noop
       Control_L: commit_code
       Control_R: commit_code
-  recognizer/punctuator:
-    import_preset: punctuator
+  recognizer/punctuator/import_preset: punctuator
+  recognizer/patterns/punct: "``[a-z]{1,2}$" 
+  key_binder/bindings:
+    - {accept: "Control+p", send: Page_Up, when: composing}
+    - {accept: "Control+n", send: Page_Down, when: composing}
+    - {accept: "Control+u", send: Up, when: composing}
+    - {accept: "Control+d", send: Down, when: composing}
+    - {accept: "Control+b", send: Left, when: composing}
+    - {accept: "Control+f", send: Right, when: composing}
+    - {accept: "Control+a", send: Home, when: composing}
+    - {accept: "Control+e", send: End, when: composing}
+    - {accept: "Control+1", select: .next, when: always}
+    - {accept: "Control+2", toggle: ascii_mode, when: always}
+    - {accept: "Control+3", toggle: full_shape, when: always}
+    - {accept: "Control+4", toggle: simplification, when: always}
+    - {accept: "Control+5", toggle: extended_charset, when: always}
+    - {accept: "Shift_R", toggle: full_shape, when: always}
