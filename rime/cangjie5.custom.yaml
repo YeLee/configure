@@ -9,3 +9,5 @@ patch:
   translator/dictionary: cangjie5_custom
   translator/enable_user_dict: true
   translator/enable_sentence: false
+  translator/enable_encoder: false
+  translator/encode_commit_history: false

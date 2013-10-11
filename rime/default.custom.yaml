@@ -10,7 +10,7 @@ patch:
     switch_key:
       Caps_Lock: noop
       Shift_L: noop
-      Shift_R: noop
+      Shift_R: inline_ascii
       Control_L: commit_code
       Control_R: commit_code
   recognizer/punctuator/import_preset: punctuator
