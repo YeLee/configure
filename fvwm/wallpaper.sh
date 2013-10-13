@@ -1,29 +1,51 @@
 #!/bin/bash
 intertime=3600
-wallpaper=/tmp/wallpaper
-if [ -e $wallpaper  ];then
+session=/tmp/wallpaper
+if [ -e $session  ];then
 	exit 0
 else
-	touch $wallpaper
+	touch $session
 fi
 
 signal_handle()
 {
-	rm $wallpaper
+	rm $session
 	exit 1
 }
 trap signal_handle SIGHUP SIGINT SIGQUIT SIGABRT SIGKILL SIGALRM SIGTERM
 
+index=0
+
+declare -a wallpaper
+genwallpaper()
+{
+	for i in "${1}"/*.png
+	do
+		wallpaper[index]="${i##*/}"
+		let "index++"
+	done
+}
+
+genramnum()
+{
+	ramnum=$(($RANDOM%${#wallpaper[@]}))
+	[ "$ramnum" -eq "$1" ] && genramnum $1
+	return $ramnum
+}
+
+genwallpaper "$1"
+index=$((${#wallpaper[@]}+1))
+
 while true
 do
-	for i in $(find $1 -type f -name "*.png")
-	do
-		fvwm-root --retain-pixmap $i
-		sleep $intertime
-		if [ -z $(pgrep fvwm) ];then
-			rm $wallpaper
-			exit 0
-		fi
-	done
+	genramnum $index
+	index=$?
+	echo ${1}/${wallpaper[index]}
+	fvwm-root --retain-pixmap ${1}/${wallpaper[index]}
+	sleep $intertime
+	if [ -z $(pgrep fvwm) ];then
+		rm $session
+		exit 0
+	fi
 done
 
