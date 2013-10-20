@@ -16,6 +16,10 @@ patch:
   recognizer/punctuator/import_preset: punctuator
   recognizer/patterns/punct: "``[a-z]{1,2}$" 
   key_binder/bindings:
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: 2, when: has_menu}
+    - {accept: bracketright, send: 3, when: has_menu}
     - {accept: "Control+p", send: Page_Up, when: composing}
     - {accept: "Control+n", send: Page_Down, when: composing}
     - {accept: "Control+u", send: Up, when: composing}
@@ -24,6 +28,7 @@ patch:
     - {accept: "Control+f", send: Right, when: composing}
     - {accept: "Control+a", send: Home, when: composing}
     - {accept: "Control+e", send: End, when: composing}
+    - {accept: "Control+c", send: Escape, when: composing}
     - {accept: "Control+1", select: .next, when: always}
     - {accept: "Control+2", toggle: ascii_mode, when: always}
     - {accept: "Control+3", toggle: full_shape, when: always}

@@ -6,8 +6,7 @@ patch:
     - luna_pinyin
   punctuator/import_preset: punctuator
   abc_segmentor/extra_tags: {}
-  translator/dictionary: cangjie5_custom
   translator/enable_user_dict: true
-  translator/enable_sentence: false
-  translator/enable_encoder: false
-  translator/encode_commit_history: false
+  translator/enable_sentence: true
+  translator/enable_encoder: true
+  translator/encode_commit_history: true
