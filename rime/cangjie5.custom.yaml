@@ -10,3 +10,5 @@ patch:
   translator/enable_sentence: true
   translator/enable_encoder: true
   translator/encode_commit_history: true
+  simplifier/opencc_config: zhtw2zhcn_s.ini
+  simplifier/tip: all
