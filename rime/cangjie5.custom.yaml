@@ -2,6 +2,24 @@
 # encoding: utf-8
 
 patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: ["中文", "西文"]
+    - name: full_shape
+      states: ["半角", "全角"]
+    - options: [ zh_trad, zh_tw, zh_simp ]
+      states:
+        - 字形 → 繁體
+        - 字形 → 正體
+        - 字形 → 簡體
+      reset: 0
+    - name: extended_charset
+      states: ["通用", "增廣"]
+  engine/filters:
+    - simplifier@zh_tw
+    - simplifier@zh_simp
+    - uniquifier
   schema/dependencies:
     - luna_pinyin
   punctuator/import_preset: punctuator
@@ -10,5 +28,12 @@ patch:
   translator/enable_sentence: true
   translator/enable_encoder: true
   translator/encode_commit_history: true
-  simplifier/opencc_config: zhtw2zhcn_s.ini
-  simplifier/tip: all
+
+  zh_tw:
+    option_name: zh_tw
+    opencc_config: zhs2zhtw_vp.ini
+    tips: all
+  zh_simp:
+    option_name: zh_simp
+    opencc_config: zhtw2zhcn_s.ini
+    tips: all
