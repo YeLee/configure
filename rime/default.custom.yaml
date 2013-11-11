@@ -30,7 +30,9 @@ patch:
     - {accept: "Control+e", send: End, when: composing}
     - {accept: "Control+c", send: Escape, when: composing}
     - {accept: "Control+1", select: .next, when: always}
-    - {accept: "Control+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+3", toggle: full_shape, when: always}
-    - {accept: "Control+4", toggle: simplification, when: always}
-    - {accept: "Control+5", toggle: extended_charset, when: always}
+    #- {accept: "Control+2", toggle: ascii_mode, when: always}
+    #- {accept: "Control+3", toggle: full_shape, when: always}
+    #- {accept: "Control+4", toggle: simplification, when: always}
+    #- {accept: "Control+5", toggle: extended_charset, when: always}
+    - {accept: "Control+minus", toggle: extended_charset, when: always}
+    - {accept: "Control+equal", toggle: full_shape, when: always}
