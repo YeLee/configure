@@ -27,7 +27,7 @@ patch:
   translator/enable_user_dict: true
   translator/enable_sentence: true
   translator/enable_encoder: true
-  translator/encode_commit_history: true
+  translator/encode_commit_history: false
 
   zh_tw:
     option_name: zh_tw
