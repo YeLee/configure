@@ -8,15 +8,17 @@ patch:
       states: ["中文", "西文"]
     - name: full_shape
       states: ["半角", "全角"]
-    - options: [ zh_trad, zh_tw, zh_simp ]
+    - name: extended_charset
+      states: ["通用", "增廣"]
+    - options: [ zh_def, zh_trad, zh_tw, zh_simp ]
       states:
+        - 字形 → 默認
         - 字形 → 繁體
         - 字形 → 正體
         - 字形 → 簡體
       reset: 0
-    - name: extended_charset
-      states: ["通用", "增廣"]
   engine/filters:
+    - simplifier@zh_trad
     - simplifier@zh_tw
     - simplifier@zh_simp
     - uniquifier
@@ -29,6 +31,10 @@ patch:
   translator/enable_encoder: true
   translator/encode_commit_history: false
 
+  zh_trad:
+    option_name: zh_trad
+    opencc_config: zhs2zht.ini
+    tips: all
   zh_tw:
     option_name: zh_tw
     opencc_config: zhs2zhtw_vp.ini
