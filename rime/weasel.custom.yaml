@@ -4,7 +4,7 @@
   "style/font_face": "FZGFShuSong"
   "style/font_point": 12
   "style/horizontal": false
-  "style/inline_preedit": true
+  "style/inline_preedit": false
   preset_color_schemes/so_young:
     name: "致青春／so_young"
     author: "五磅兔 zcunlin@foxmail.com"
