@@ -11,6 +11,7 @@ AddToMenu FunMenu "%FunMenu.png%应用程序"   Title Top
 DestroyMenu graphics
 AddToMenu graphics
 + "%gimp.png%修边"   Exec exec gimp-2.6
++ "%inkscape.png%墨池"   Exec exec inkscape
 + "%mirage.png%蜃景"   Exec exec mirage
 + "%screenshot.png%截图" Exec exec $[FVWM_USERDIR]/screenshot.sh
 
@@ -30,7 +31,7 @@ AddToMenu network
 DestroyMenu system
 AddToMenu system
 + "%xterm.png%魔法" Exec exec xterm
-+ "%terminal.png%终端"   Exec exec Terminal
++ "%terminal.png%终端"   Exec exec xfce4-terminal
 + "%taskmanager.png%杀手"   Exec exec xfce4-taskmanager
 + "%virtualbox.png%魔盒"   Exec exec VirtualBox
 

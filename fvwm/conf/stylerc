@@ -37,6 +37,7 @@ Style * MiniIcon Unknown.png
 Style "Firefox" StartsOnPage 0 0
 Style "claws-mail" StartsOnPage 0 0
 Style "gimp*" StartsOnPage 0 1
+Style "*Inkscape" StartsOnPage 0 1
 Style "smplayer" StartsOnPage 0 1
 Style "MPlayer" StartsOnPage 0 1
 Style "xfce4-mixer" StartsOnPage 0 1
