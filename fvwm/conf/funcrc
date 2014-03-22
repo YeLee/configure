@@ -40,3 +40,8 @@ AddToFunc Functray
 AddToFunc WindowListFunc
 + I WarpToWindow 50 50
 
+DestroyFunc MoveAndGotoPage
+AddToFunc MoveAndGotoPage
++ I Current MoveToPage $0 $1
++ I GotoPage $0 $1
+

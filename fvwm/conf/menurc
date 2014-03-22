@@ -55,10 +55,10 @@ AddToMenu FVWM
 #窗口菜单
 DestroyMenu	WinMenu
 AddToMenu	WinMenu	"窗口菜单" Title
-+ "工作区一"	MoveToPage 0 0
-+ "工作区二"	MoveToPage 0 1
-+ "工作区三"	MoveToPage 1 0
-+ "工作区四"	MoveToPage 1 1
++ "工作区一"	MoveAndGotoPage 0 0
++ "工作区二"	MoveAndGotoPage 0 1
++ "工作区三"	MoveAndGotoPage 1 0
++ "工作区四"	MoveAndGotoPage 1 1
 + "粘附窗口"	Stick
 + ""		Nop
 + "升高窗口"	Raise
