@@ -8,14 +8,16 @@ patch:
       states: ["中文", "西文"]
     - name: full_shape
       states: ["半角", "全角"]
+    - name: ascii_punct
+      states: [ 標點, 符號 ]
     - name: extended_charset
       states: ["通用", "增廣"]
     - options: [ zh_def, zh_trad, zh_tw, zh_simp ]
       states:
-        - 字形 → 默認
-        - 字形 → 繁體
-        - 字形 → 正體
-        - 字形 → 簡體
+        - 字形 → 默認字形
+        - 字形 → 傳統漢字
+        - 字形 → 臺灣正體
+        - 字形 → 規範漢字
       reset: 0
   engine/filters:
     - simplifier@zh_trad
