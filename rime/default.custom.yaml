@@ -4,6 +4,9 @@
 patch:
   schema_list:
     - schema: cangjie5
+  switcher/fold_options: false
+  switcher/option_list_separator: '、'
+  switcher/abbreviate_options: true
   menu/page_size: 10
   ascii_composer:
     good_old_caps_lock: true

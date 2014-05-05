@@ -9,9 +9,9 @@ patch:
     - name: full_shape
       states: ["半角", "全角"]
     - name: ascii_punct
-      states: [ 標點, 符號 ]
+      states: ["句讀", "符號"]
     - name: extended_charset
-      states: ["通用", "增廣"]
+      states: ["常用", "增廣"]
     - options: [ zh_def, zh_trad, zh_tw, zh_simp ]
       states:
         - 字形 → 默認字形
