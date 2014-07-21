@@ -20,5 +20,5 @@ AddToFunc StartFunction
 #退出函数
 DestroyFunc ExitFunction
 AddToFunc ExitFunction
-+ I Exec exec killall conky fcitx nm-applet pulseaudio trayer-srg compton polkit-gnome-authentication-agent-1
++ I Exec exec killall conky fcitx nm-applet pulseaudio trayer-srg compton polkit-gnome-authentication-agent-1 gnome-keyring-daemon
 
