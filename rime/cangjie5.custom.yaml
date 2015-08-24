@@ -12,15 +12,17 @@ patch:
       states: ["句讀", "符號"]
     - name: extended_charset
       states: ["常用", "增廣"]
-    - options: [ zh_def, zh_trad, zh_tw, zh_simp ]
+    - options: [ zh_def, zh_trad, zh_hk, zh_tw, zh_simp ]
       states:
         - 字形 → 默認字形
         - 字形 → 傳統漢字
+        - 字形 → 港標漢字
         - 字形 → 臺灣正體
         - 字形 → 規範漢字
       reset: 0
   engine/filters:
     - simplifier@zh_trad
+    - simplifier@zh_hk
     - simplifier@zh_tw
     - simplifier@zh_simp
     - uniquifier
@@ -45,13 +47,17 @@ patch:
 
   zh_trad:
     option_name: zh_trad
-    opencc_config: zhs2zht.ini
+    opencc_config: s2t.json
+    tips: all
+  zh_hk:
+    option_name: zh_hk
+    opencc_config: s2hk.json
     tips: all
   zh_tw:
     option_name: zh_tw
-    opencc_config: zhs2zhtw_vp.ini
+    opencc_config: s2twp.json
     tips: all
   zh_simp:
     option_name: zh_simp
-    opencc_config: zhtw2zhcn_s.ini
+    opencc_config: tw2sp.json
     tips: all
