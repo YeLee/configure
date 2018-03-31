@@ -5,45 +5,35 @@ patch:
   switches:
     - name: ascii_mode
       reset: 0
-      states: ["中文", "西文"]
+      states: [ "中文" , "西文" ]
     - name: full_shape
-      states: ["半角", "全角"]
+      states: [ "半角" , "全角" ]
     - name: ascii_punct
-      states: ["句讀", "符號"]
+      states: [ "句讀" , "符號" ]
     - name: extended_charset
-      states: ["常用", "增廣"]
+      states: [ "常用" , "增廣" ]
     - options: [ zh_def, zh_trad, zh_hk, zh_tw, zh_simp ]
+      reset: 0
       states:
         - 字形 → 默認字形
         - 字形 → 傳統漢字
         - 字形 → 港標漢字
         - 字形 → 臺灣正體
         - 字形 → 規範漢字
-      reset: 0
   engine/filters:
     - simplifier@zh_trad
     - simplifier@zh_hk
     - simplifier@zh_tw
     - simplifier@zh_simp
     - uniquifier
-  schema/dependencies:
-    - luna_pinyin
+    - single_char_filter
   punctuator/import_preset: punctuator
   abc_segmentor/extra_tags: {}
   translator/enable_user_dict: true
   translator/enable_sentence: true
   translator/enable_encoder: true
   translator/encode_commit_history: false
-  translator/comment_format:
-    - xform/^~([a-z]*)$/　【～$1】/
-    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
-  translator/preedit_format:
-    - xform/^([a-z\s\']*)$/$1·\U$1\E/
-    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
-  reverse_lookup/comment_format:
-    - xform/ /、/
-    - xform/^(.*)$/　【$1】/
-    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜片|"
+  recognizer/patterns/punct: "``[a-z]{1,2}$"
 
   zh_trad:
     option_name: zh_trad
