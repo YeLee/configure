@@ -3,7 +3,7 @@
 
 patch:
   style:
-    color_scheme: aqua
+    color_scheme: simple
     horizontal: false
     inline_preedit: false
     corner_radius: 10
@@ -17,3 +17,20 @@ patch:
     label_font_face: 'STHeitiTC-Medium'
     label_font_point: 15
   us_keyboard_layout: true
+  preset_color_schemes/simple:
+      name: "極簡/极简/simple"
+      author: "YeLee@github.com"
+      back_color: 0xFFFFFF
+      border_color: 0xFFFFFF
+      border_height: 0
+      border_width: 0
+      candidate_text_color: 0x666666
+      comment_text_color: 0xBBBBBB
+      hilited_back_color: 0xFFFFFF
+      hilited_candidate_back_color: 0xFFFFFF
+      hilited_candidate_label_color: 0x000000
+      hilited_candidate_text_color: 0x000000
+      hilited_comment_text_color: 0x000000
+      hilited_text_color: 0x000000
+      label_color: 0xBBBBBB
+      text_color: 0xBBBBBB
