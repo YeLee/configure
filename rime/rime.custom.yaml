@@ -1,0 +1,32 @@
+# Rime general frontend custom settings
+# encoding: utf-8
+
+patch:
+  "style/border_height": 8
+  "style/border_width": 8
+  "style/candidate_format": "%c、%@"
+  "style/color_scheme": simple
+  "style/corner_radius": 5
+  "style/display_tray_icon": true
+  "style/font_face": "STHeitiTC-Medium"
+  "style/font_point": 14
+  "style/fullscreen": false
+  "style/horizontal": false
+  "style/inline_preedit": false
+  "style/label_format": "%s、"
+  "style/layout/round_corner": 5
+  preset_color_schemes/simple: 
+    author: "YeLee@github.com"
+    back_color: 0xFFFFFF
+    border_color: 0xFFFFFF
+    candidate_text_color: 0x666666
+    comment_text_color: 0xBBBBBB
+    hilited_back_color: 0xFFFFFF
+    hilited_candidate_back_color: 0xFFFFFF
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0x000000
+    hilited_label_color: 0x000000
+    hilited_text_color: 0x000000
+    label_color: 0xBBBBBB
+    name: "極簡/极简/simple"
+    text_color: 0xBBBBBB
